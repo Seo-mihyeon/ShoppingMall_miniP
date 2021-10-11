@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mall.mapper.MemberMapper">
+
+<!-- adminCk는 일반회원 등록을 디폴트값으로 지정하기 위해 0으로 삽입함 -->
+	<insert id="memberJoin">
+		<![CDATA[
+			INSERT INTO SHOP_MEMBER VALUES(#{memberId}, #{memberPw}, #{memberName}, #{memberMail}, 
+						#{memberBirth}, #{memberBasicAddr}, #{memberDetailAddr}, 0)
+		]]>
+	</insert>
+</mapper>
