@@ -5,9 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>쇼핑몰 페이지</title>
+<link rel="stylesheet" href="resources/css/main.css">
 </head>
 <body>
-
 <div class="wrapper">
 	<div class="wrap">
 		<div class="top gnb 구역입니다">
