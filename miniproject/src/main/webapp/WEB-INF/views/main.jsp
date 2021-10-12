@@ -137,7 +137,7 @@
                                             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
                                         </div>
                                     </li>
-                                   <li class="d-none d-lg-block"> <a href="/member/join" class="btn header-btn">Sign in</a></li>
+                                   <li class="d-none d-lg-block"> <a href="/member/join" class="btn header-btn">Sign up</a></li>
                                 </ul>
                             </div>
                             <!-- Mobile Menu -->
@@ -281,7 +281,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <h4><a href="#">첫번째 물건 입니다.</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>

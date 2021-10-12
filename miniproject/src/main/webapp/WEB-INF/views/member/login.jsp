@@ -146,7 +146,7 @@
 	                                        </a>
 	                                     </div>
                                     </li>
-                                   <li class="d-none d-lg-block"> <a href="login.jsp" class="btn header-btn">Sign in</a></li>
+                                   <li class="d-none d-lg-block"> <a href="/member/login" class="btn header-btn">Sign in</a></li>
                                 </ul>
                             </div>
                             <!-- Mobile Menu -->
@@ -164,7 +164,7 @@
     <!-- slider Area Start-->
     <div class="slider-area ">
         <!-- Mobile Menu -->
-        <div class="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
+        <div class="single-slider slider-height2 d-flex align-items-center" data-background="resources/assets/img/hero/category.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
