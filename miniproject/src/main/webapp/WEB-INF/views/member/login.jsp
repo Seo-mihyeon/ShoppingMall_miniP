@@ -139,9 +139,12 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="shopping-card">
-                                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-                                        </div>
+                                    
+	                                    <div class="shopping-card">
+	                                        <a href="cart.html">
+	                                        	<i class="fas fa-shopping-cart"></i>
+	                                        </a>
+	                                     </div>
                                     </li>
                                    <li class="d-none d-lg-block"> <a href="login.jsp" class="btn header-btn">Sign in</a></li>
                                 </ul>
@@ -185,7 +188,7 @@
 						<div class="hover">
 							<h4>New to our website?</h4>
 							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-							<a class="button button-account" href="register.html">Create an Account</a>
+							<a class="button button-account" href="/member/join">Create an Account</a>
 						</div>
 					</div>
 				</div>
