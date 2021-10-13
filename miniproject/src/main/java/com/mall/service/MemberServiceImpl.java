@@ -1,29 +1,15 @@
 package com.mall.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.mall.mapper.MemberMapper;
 import com.mall.model.MemberVO;
 
-@Service // 서비스를 처리할 클래스
-public class MemberServiceImpl implements MemberService {
+public interface MemberService {
 	
-	@Autowired
-	MemberMapper memberMapper;
-
-	@Override
-	public void memberJoin(MemberVO member) throws Exception {
-		memberMapper.memberJoin(member);
-		
-	}
-
-	@Override
-	public int idCheck(String memberId) throws Exception {
-		return memberMapper.idCheck(memberId);
-		
-	}
+	// 회원가입
+	public void memberJoin(MemberVO member) throws Exception;
 	
-	
+	// 아이디 중복 체크
+	public int idCheck(String memberId) throws Exception;
 
+	// 로그인
+	public MemberVO memberLogin(MemberVO member) throws Exception;
 }
