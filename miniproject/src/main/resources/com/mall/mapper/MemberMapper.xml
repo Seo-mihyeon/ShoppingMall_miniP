@@ -16,12 +16,6 @@
 		SELECT COUNT(*) FROM SHOP_MEMBER WHERE MEMBERID = #{memberId}
 		]]>
 	</select>
-<<<<<<< HEAD
-
-	<select id="memberCheck" resultType="int">
-		<![CDATA[
-		SELECT * FROM SHOP_MEMBER WHERE MEMBERID = #{memberId}
-=======
 	
 	<!-- 로그인 / memberId, memberName, adminCk 열을 조회할 것 -->
 	<select id="memberLogin" resultType="com.mall.model.MemberVO">
@@ -31,7 +25,6 @@
 	 -->
 		<![CDATA[
 		SELECT MEMBERID, MEMBERPW, MEMBERNAME, ADMINCK FROM SHOP_MEMBER WHERE MEMBERID = #{memberId}
->>>>>>> ed7d5f88136ba1ebe6fa5f49cc31ed7c3a5b548a
 		]]>
 	</select>
 </mapper>
