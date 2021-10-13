@@ -5,14 +5,26 @@
 <!-- adminCk는 일반회원 등록을 디폴트값으로 지정하기 위해 0으로 삽입함 -->
 	<insert id="memberJoin">
 		<![CDATA[
-			INSERT INTO SHOP_MEMBER VALUES(#{memberId}, #{memberPw}, #{memberName}, #{memberMail}, 
-						#{memberBirth}, #{memberBasicAddr}, #{memberDetailAddr}, 0)
+			INSERT INTO SHOP_MEMBER VALUES(#{memberId}, #{memberPw}, #{memberName}, #{memberPhone},
+								#{memberBirth}, #{memberMail}, #{memberAddr1}, #{memberAddr2}, #{memberAddr3}, 0)
 		]]>
 	</insert>
 	
+	<!-- id 중복 검사  -->
 	<select id="idCheck" resultType="int">
 		<![CDATA[
 		SELECT COUNT(*) FROM SHOP_MEMBER WHERE MEMBERID = #{memberId}
+		]]>
+	</select>
+	
+	<!-- 로그인 / memberId, memberName, adminCk 열을 조회할 것 -->
+	<select id="memberLogin" resultType="com.mall.model.MemberVO">
+	<!-- 기존 코드 
+		SELECT MEMBERID, MEMBERNAME, ADMINCK FROM SHOP_MEMBER 
+			WHERE MEMBERID = #{memberId} AND MEMBERPW = #{memberPw}
+	 -->
+		<![CDATA[
+		SELECT MEMBERID, MEMBERPW, MEMBERNAME, ADMINCK FROM SHOP_MEMBER WHERE MEMBERID = #{memberId}
 		]]>
 	</select>
 </mapper>
