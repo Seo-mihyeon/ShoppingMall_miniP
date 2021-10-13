@@ -4,25 +4,19 @@ import java.util.Date;
 
 public class ItemVO {
 
-	// 상품 아이디
+	/* 상품 id */
 	private int itemId;
-
-	// 상품코드
+	/* 상품 코드 */
 	private String itemCode;
-
-	// 상품명
+	/* 상품 이름 */
 	private String itemName;
-
-	// 상품가격
+	/* 상품 가격 */
 	private int itemPrice;
-
-	// 상품정보
+	/* 상품 소개 */
 	private String itemInfo;
-
-	// 등록날짜
-	private Date sysDate;
-
-	// 수정날짜
+	/* 등록 날짜 */
+	private Date regDate;
+	/* 수정 날짜 */
 	private Date updateDate;
 
 	public int getItemId() {
@@ -65,12 +59,12 @@ public class ItemVO {
 		this.itemInfo = itemInfo;
 	}
 
-	public Date getSysDate() {
-		return sysDate;
+	public Date getRegDate() {
+		return regDate;
 	}
 
-	public void setSysDate(Date sysDate) {
-		this.sysDate = sysDate;
+	public void setRegDate(Date regDate) {
+		this.regDate = regDate;
 	}
 
 	public Date getUpdateDate() {
@@ -83,9 +77,8 @@ public class ItemVO {
 
 	@Override
 	public String toString() {
-		return "ItemVO [itemId=" + itemId + ", =item";
+		return "ShopVO [itemId=" + itemId + ", itemCode=" + itemCode + ", itemName=" + itemName + ", itemPrice="
+				+ itemPrice + ", itemInfo=" + itemInfo + ", regDate=" + regDate + ", updateDate=" + updateDate + "]";
 	}
-	
-	
 
 }

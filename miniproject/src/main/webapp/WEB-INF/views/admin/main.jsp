@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="../resources/css/admin/main.css">
- 
+
 <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -14,8 +14,8 @@
 </head>
 </head>
 <body>
- 
-    <div class="wrapper">
+<%@include file="../includes/admin/header.jsp" %>
+			<div class="wrapper">
         <div class="wrap">
             <!-- gnv_area -->    
             <div class="top_gnb_area">
@@ -42,10 +42,10 @@
                             <a class="admin_list_02">상품 목록</a>
                         </li>
                         <lI>
-                            <a class="admin_list_03">회원 관리</a>                            
+                            <a class="admin_list_05">회원 관리</a>                            
                         </lI>                                                                                             
                     </ul>
-<!-- 
+					<!-- 
                     <div class="admin_list_01">
                         <a>상품 관리</a>
                     </div>
@@ -57,7 +57,9 @@
                 <div class="clearfix"></div>
             </div>
         </div>
-    </div>
- 
+    </div>	
+				
+<%@include file="../includes/admin/footer.jsp" %>
+
 </body>
 </html>
