@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="ko">
     <head>
@@ -33,7 +32,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                	<!-- 로고 이미지 부분 -->
+                	<!-- ë¡ê³  ì´ë¯¸ì§ ë¶ë¶ -->
                     <img src="resources/assets/img/logo/logo.png" alt="">
                 </div>
             </div>
@@ -50,33 +49,12 @@
                        <div class="col-xl-12">
                             <div class="row d-flex justify-content-between align-items-center">
                                 <div class="header-info-left d-flex">
-                                    <div class="flag">
-                                    	<!-- 상단에 아이콘 화장품 모양으로 변경 -->
-                                        <img src="resources/assets/img/icon/skincare.png" alt="">
-                                    </div>
                                     <div class="select-this">
-                                        <form action="#">
-                                            <div class="select-itms">
-                                                <select name="select" id="select1">
-                                                    <option value="">USA</option>
-                                                    <option value="">SPN</option>
-                                                    <option value="">CDA</option>
-                                                    <option value="">USD</option>
-                                                </select>
-                                            </div>
-                                        </form>
                                     </div>
-                                    <ul class="contact-now">     
-                                        <li>+777 2345 7886</li>
-                                    </ul>
                                 </div>
                                 <div class="header-info-right">
                                    <ul>                                          
-                                       <li><a href="login.html">My Account </a></li>
-                                       <li><a href="product_list.html">Wish List  </a></li>
-                                       <li><a href="cart.html">Shopping</a></li>
-                                       <li><a href="cart.html">Cart</a></li>
-                                       <li><a href="checkout.html">Checkout</a></li>
+                                       <li><a href="member/login">My Account </a></li>
                                    </ul>
                                 </div>
                             </div>
@@ -92,12 +70,12 @@
                                   <a href="index.html"><img src="resources/assets/img/logo/logo.png" alt=""></a>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
+                            <div class="col-xl-6 col-lg-6 col-md-7 col-sm-5">
                                 <!-- Main-menu -->
                                 <div class="main-menu f-right d-none d-lg-block">
                                     <nav>                                                
                                         <ul id="navigation">                                                                                                                                     
-                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="main.jsp">Home</a></li>
                                             <li><a href="Catagori.html">Catagori</a></li>
                                             <li class="hot"><a href="#">Latest</a>
                                                 <ul class="submenu">
@@ -105,29 +83,11 @@
                                                     <li><a href="single-product.html"> Product Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="blog.html">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Pages</a>
-                                                <ul class="submenu">
-                                                    <li><a href="login.html">Login</a></li>
-                                                    <li><a href="cart.html">Card</a></li>
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="confirmation.html">Confirmation</a></li>
-                                                    <li><a href="cart.html">Shopping Cart</a></li>
-                                                    <li><a href="checkout.html">Product Checkout</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div> 
-                            <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
+                            <div class="col-xl-5 col-lg-5 col-md-3 col-sm-3 fix-card">
                                 <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
                                     <li class="d-none d-xl-block">
                                         <div class="form-box f-right ">
@@ -137,17 +97,7 @@
                                             </div>
                                         </div>
                                      </li>
-                                    <li class=" d-none d-xl-block">
-                                        <div class="favorit-items">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="shopping-card">
-                                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-                                        </div>
-                                    </li>
-                                   <li class="d-none d-lg-block"> <a href="#" class="btn header-btn">Sign in</a></li>
+                                   <li class="d-none d-lg-block"> <a href="member/join" class="btn header-btn">Sign up</a></li>
                                 </ul>
                             </div>
                             <!-- Mobile Menu -->
@@ -173,17 +123,17 @@
                         <div class="row d-flex align-items-center justify-content-between">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block">
                                 <div class="hero__img" data-animation="bounceIn" data-delay=".4s">
-                                	<!-- 상단 이미지 여성
-                                		김유정이 '라네즈' 모델인데 라네즈에 세일 상품에 대해서 내용을 기제하면 어떨까 싶음
-                                		(이용한 사진에서 라네즈가 많아서...ㅋㅋㅋ) -->
+                                	<!-- ìë¨ ì´ë¯¸ì§ ì¬ì±
+                                		ê¹ì ì ì´ 'ë¼ë¤ì¦' ëª¨ë¸ì¸ë° ë¼ë¤ì¦ì ì¸ì¼ ìíì ëí´ì ë´ì©ì ê¸°ì íë©´ ì´ë¨ê¹ ì¶ì
+                                		(ì´ì©í ì¬ì§ìì ë¼ë¤ì¦ê° ë§ìì...ããã) -->
                                     <img src="resources/assets/img/hero/kim02.png" alt="">
                                 </div>
                             </div>
                             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8">
                                 <div class="hero__caption">
                                     <span data-animation="fadeInRight" data-delay=".4s">60% Discount</span>
-                                    <h1 data-animation="fadeInRight" data-delay=".6s">유정이도<br> 라네즈 크림 스킨</h1>
-                                    <p data-animation="fadeInRight" data-delay=".8s">꿀 피부 에약 완료!</p>
+                                    <h1 data-animation="fadeInRight" data-delay=".6s">유정이도<br>라네즈 크림 스킨</h1>
+                                    <p data-animation="fadeInRight" data-delay=".8s">꿀 피부 예약 완료!</p>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn" data-animation="fadeInRight" data-delay="1s">
                                         <a href="industries.html" class="btn hero-btn">Shop Now</a>
@@ -297,7 +247,7 @@
                 </div>
                 <!-- Nav Card -->
                 <div class="tab-content" id="nav-tabContent">
-                    <!-- ALL 부분 -->
+                    <!-- ALL ë¶ë¶ -->
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-6">
@@ -316,7 +266,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">워터뱅크 아이 젤</a></h4>
+                                        <h4><a href="#">ìí°ë±í¬ ìì´ ì ¤</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -339,7 +289,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">피토알렉신 진정 보습 크림</a></h4>
+                                        <h4><a href="#">í¼í ìë ì  ì§ì  ë³´ìµ í¬ë¦¼</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -365,7 +315,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">크림 스킨</a></h4>
+                                        <h4><a href="#">í¬ë¦¼ ì¤í¨</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -388,7 +338,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">크림 스킨 옴므 올인원</a></h4>
+                                        <h4><a href="#">í¬ë¦¼ ì¤í¨ ì´ë¯ ì¬ì¸ì</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -411,7 +361,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">워터뱅크 하이드로 크림 EX</a></h4>
+                                        <h4><a href="#">ìí°ë±í¬ íì´ëë¡ í¬ë¦¼ EX</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -437,7 +387,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">퍼펙트 리뉴 유스 리제너레이팅 아이 크림</a></h4>
+                                        <h4><a href="#">í¼íí¸ ë¦¬ë´ ì ì¤ ë¦¬ì ëë ì´í ìì´ í¬ë¦¼</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -449,7 +399,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- NEW 부분 -->
+                    <!-- NEW ë¶ë¶ -->
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-6">
@@ -468,7 +418,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">퍼펙트 리뉴 유스 리제너레이팅 아이 크림</a></h4>
+                                        <h4><a href="#">í¼íí¸ ë¦¬ë´ ì ì¤ ë¦¬ì ëë ì´í ìì´ í¬ë¦¼</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -494,7 +444,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">라네즈-크림 스킨</a></h4>
+                                        <h4><a href="#">ë¼ë¤ì¦-í¬ë¦¼ ì¤í¨</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -520,7 +470,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">워터뱅크 아이 젤</a></h4>
+                                        <h4><a href="#">ìí°ë±í¬ ìì´ ì ¤</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -543,7 +493,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">어성초 77% 토너</a></h4>
+                                        <h4><a href="#">ì´ì±ì´ 77% í ë</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -566,7 +516,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">캐리오피 포츌라카 토너</a></h4>
+                                        <h4><a href="#">ìºë¦¬ì¤í¼ í¬ì¸ë¼ì¹´ í ë</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -592,7 +542,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">브링그린 티트리 시카 수딩 토너</a></h4>
+                                        <h4><a href="#">ë¸ë§ê·¸ë¦° í°í¸ë¦¬ ìì¹´ ìë© í ë</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -604,7 +554,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--  사용안함 제외할 예정 Card three -->
+                    <!--  ì¬ì©ìí¨ ì ì¸í  ìì  Card three -->
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-6">
@@ -756,7 +706,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- 사용안함 제외할 예정 card foure -->
+                    <!-- ì¬ì©ìí¨ ì ì¸í  ìì  card foure -->
                     <div class="tab-pane fade" id="nav-last" role="tabpanel" aria-labelledby="nav-last-tab">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-6">
@@ -913,176 +863,6 @@
             </div>
         </section>
         <!-- Latest Products End -->
-        <!-- Best Product Start -->
-        <div class="best-product-area lf-padding" >
-           <div class="product-wrapper bg-height" style="background-image: url('resources/assets/img/categori/card.png')">
-                <div class="container position-relative">
-                    <div class="row justify-content-between align-items-end">
-                        <div class="product-man position-absolute  d-none d-lg-block">
-                            <img src="assets/img/categori/card-man.png" alt="">
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-md-2 d-none d-lg-block">
-                            <div class="vertical-text">
-                                <span>Manz</span>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-lg-8">
-                            <div class="best-product-caption">
-                                <h2>Find The Best Product<br> from Our Shop</h2>
-                                <p>Designers who are interesten creating state ofthe.</p>
-                                <a href="#" class="black-btn">Shop Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-           </div>
-           <!-- Shape -->
-           <div class="shape bounce-animate d-none d-md-block">
-               <img src="assets/img/categori/card-shape.png" alt="">
-           </div>
-        </div>
-        <!-- Best Product End-->
-        <!-- Best Collection Start -->
-        <div class="best-collection-area section-padding2">
-            <div class="container">
-                <div class="row d-flex justify-content-between align-items-end">
-                    <!-- Left content -->
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="best-left-cap">
-                            <h2>Best Collection of This Month</h2>
-                            <p>Designers who are interesten crea.</p>
-                            <a href="#" class="btn shop1-btn">Shop Now</a>
-                        </div>
-                        <div class="best-left-img mb-30 d-none d-sm-block">
-                            <img src="assets/img/collection/collection1.png" alt="">
-                        </div>
-                    </div>
-                    <!-- Mid Img -->
-                     <div class="col-xl-2 col-lg-2 d-none d-lg-block">
-                        <div class="best-mid-img mb-30 ">
-                            <img src="assets/img/collection/collection2.png" alt="">
-                        </div>
-                    </div>
-                    <!-- Riht Caption -->
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="best-right-cap ">
-                           <div class="best-single mb-30">
-                               <div class="single-cap">
-                                   <h4>Menz Winter<br> Jacket</h4>
-                               </div>
-                               <div class="single-img">
-                                  <img src="assets/img/collection/collection3.png" alt="">
-                               </div>
-                           </div>
-                        </div>
-                        <div class="best-right-cap">
-                           <div class="best-single mb-30">
-                               <div class="single-cap active">
-                                   <h4>Menz Winter<br>Jacket</h4>
-                               </div>
-                               <div class="single-img">
-                                  <img src="assets/img/collection/collection4.png" alt="">
-                               </div>
-                           </div>
-                        </div>
-                        <div class="best-right-cap">
-                           <div class="best-single mb-30">
-                               <div class="single-cap">
-                                   <h4>Menz Winter<br> Jacket</h4>
-                               </div>
-                               <div class="single-img">
-                                  <img src="assets/img/collection/collection5.png" alt="">
-                               </div>
-                           </div>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </div>
-        <!-- Best Collection End -->
-        <!-- Latest Offers Start -->
-        <div class="latest-wrapper lf-padding">
-            <div class="latest-area latest-height d-flex align-items-center" data-background="resources/assets/img/collection/latest-offer.png">
-                <div class="container">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-xl-5 col-lg-5 col-md-6 offset-xl-1 offset-lg-1">
-                            <div class="latest-caption">
-                                <h2>Get Our<br>Latest Offers News</h2>
-                                <p>Subscribe news latter</p>
-                            </div>
-                        </div>
-                         <div class="col-xl-5 col-lg-5 col-md-6 ">
-                            <div class="latest-subscribe">
-                                <form action="#">
-                                    <input type="email" placeholder="Your email here">
-                                    <button>Shop Now</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- man Shape -->
-                <div class="man-shape">
-                    <img src="assets/img/collection/latest-man.png" alt="">
-                </div>
-            </div>
-        </div>
-        <!-- Latest Offers End -->
-        <!-- Shop Method Start-->
-        <div class="shop-method-area section-padding30">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="single-method mb-40">
-                            <i class="ti-package"></i>
-                            <h6>Free Shipping Method</h6>
-                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="single-method mb-40">
-                            <i class="ti-unlock"></i>
-                            <h6>Secure Payment System</h6>
-                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
-                        </div>
-                    </div> 
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="single-method mb-40">
-                            <i class="ti-reload"></i>
-                            <h6>Secure Payment System</h6>
-                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Shop Method End-->
-        <!-- Gallery Start-->
-        <div class="gallery-wrapper lf-padding">
-            <div class="gallery-area">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="gallery-items">
-                            <img src="assets/img/gallery/gallery1.jpg" alt="">
-                        </div> 
-                        <div class="gallery-items">
-                            <img src="assets/img/gallery/gallery2.jpg" alt="">
-                        </div>
-                        <div class="gallery-items">
-                            <img src="assets/img/gallery/gallery3.jpg" alt="">
-                        </div>
-                        <div class="gallery-items">
-                            <img src="assets/img/gallery/gallery4.jpg" alt="">
-                        </div>
-                        <div class="gallery-items">
-                            <img src="assets/img/gallery/gallery5.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Gallery End-->
-
     </main>
    <footer>
 
