@@ -1,70 +1,46 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html>
-<html>
+
+<!doctype html>
+<html class="no-js" lang="zxx">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>화장품 쇼핑몰 </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>shopping</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="resources/assets/img/favicon.ico">
 
 		<!-- CSS here -->
-	    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/flaticon.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/slicknav.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/animate.min.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/themify-icons.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/slick.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/nice-select.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/style.css">
-
+            <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/flaticon.css">
+            <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/slicknav.css">
+            <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/animate.min.css">
+            <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/magnific-popup.css">
+            <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/themify-icons.css">
+            <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/slick.css">
+            <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/nice-select.css">
+            <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/style.css">
    </head>
-<body>
-<!-- 
-<div class="wrapper">
-	<div class="wrap">
-		<div class="top gnb 구역입니다">
-			<h1>gnb area</h1>
-		</div>
-		<div class="top_area">
-			<div class="logo_area">
-				<h1>logo area</h1>
-			</div>
-			<div class="search area">
-				<h1>search area</h1>
-			</div>
-			<div class="login-area">
-			<!-- 로그인 하지 않은 상태 -->  -->
-			<!-- 
-			<c:if test="${member == null }">
-				<div class="login_button"><a href="/member/login">로그인</a></div>
-				<span><a href="/member/join">회원가입</a></span>
-			</c:if>  -->
-			
-			<!-- 로그인한 상태 -->
-			<!-- 
-			<c:if test="${member != null }">
-			
-			</c:if>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<div class="navi_bar_area">
-			<h1>navi area</h1>
-		</div>
-		<div class="content_area">
-			<h1>content area</h1>
-		</div>
-	</div>
-</div>
- -->
+
+   <body>
+       
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                	<!-- 로고 이미지 부분 -->
+                    <img src="resources/assets/img/logo/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+
     <header>
         <!-- Header Start -->
        <div class="header-area">
@@ -74,9 +50,9 @@
                        <div class="col-xl-12">
                             <div class="row d-flex justify-content-between align-items-center">
                                 <div class="header-info-left d-flex">
-                                <!-- 삭제 예정 시작 -->
                                     <div class="flag">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/icon/header_icon.png" alt="">
+                                    	<!-- 상단에 아이콘 화장품 모양으로 변경 -->
+                                        <img src="resources/assets/img/icon/skincare.png" alt="">
                                     </div>
                                     <div class="select-this">
                                         <form action="#">
@@ -93,11 +69,10 @@
                                     <ul class="contact-now">     
                                         <li>+777 2345 7886</li>
                                     </ul>
-                                <!-- 삭제 예정 끝 --> 
                                 </div>
                                 <div class="header-info-right">
                                    <ul>                                          
-                                       <li><a href="/member/login">My Account </a></li>
+                                       <li><a href="login.html">My Account </a></li>
                                        <li><a href="product_list.html">Wish List  </a></li>
                                        <li><a href="cart.html">Shopping</a></li>
                                        <li><a href="cart.html">Cart</a></li>
@@ -114,7 +89,7 @@
                             <!-- Logo -->
                             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
                                 <div class="logo">
-                                  <a href="/main"><img src="${pageContext.request.contextPath}/resources/assets/img/logo/logo.png" alt=""></a>
+                                  <a href="index.html"><img src="resources/assets/img/logo/logo.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
@@ -122,7 +97,7 @@
                                 <div class="main-menu f-right d-none d-lg-block">
                                     <nav>                                                
                                         <ul id="navigation">                                                                                                                                     
-                                            <li><a href="/main">Home</a></li>
+                                            <li><a href="index.html">Home</a></li>
                                             <li><a href="Catagori.html">Catagori</a></li>
                                             <li class="hot"><a href="#">Latest</a>
                                                 <ul class="submenu">
@@ -138,7 +113,7 @@
                                             </li>
                                             <li><a href="#">Pages</a>
                                                 <ul class="submenu">
-                                                    <li><a href="/member/login">Login</a></li>
+                                                    <li><a href="login.html">Login</a></li>
                                                     <li><a href="cart.html">Card</a></li>
                                                     <li><a href="elements.html">Element</a></li>
                                                     <li><a href="about.html">About</a></li>
@@ -172,7 +147,7 @@
                                             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
                                         </div>
                                     </li>
-                                   <li class="d-none d-lg-block"> <a href="/member/join" class="btn header-btn">Sign up</a></li>
+                                   <li class="d-none d-lg-block"> <a href="#" class="btn header-btn">Sign in</a></li>
                                 </ul>
                             </div>
                             <!-- Mobile Menu -->
@@ -193,12 +168,37 @@
         <div class="slider-area ">
             <!-- Mobile Menu -->
             <div class="slider-active">
-                <div class="single-slider slider-height" data-background="${pageContext.request.contextPath}/resources/assets/img/hero/h1_hero.jpg">
+                <div class="single-slider slider-height" data-background="assets/img/hero/h1_hero.jpg">
                     <div class="container">
                         <div class="row d-flex align-items-center justify-content-between">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block">
                                 <div class="hero__img" data-animation="bounceIn" data-delay=".4s">
-                                    <img src="${pageContext.request.contextPath}/resources/assets/img/hero/hero_man.png" alt="">
+                                	<!-- 상단 이미지 여성
+                                		김유정이 '라네즈' 모델인데 라네즈에 세일 상품에 대해서 내용을 기제하면 어떨까 싶음
+                                		(이용한 사진에서 라네즈가 많아서...ㅋㅋㅋ) -->
+                                    <img src="resources/assets/img/hero/kim02.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInRight" data-delay=".4s">60% Discount</span>
+                                    <h1 data-animation="fadeInRight" data-delay=".6s">유정이도<br> 라네즈 크림 스킨</h1>
+                                    <p data-animation="fadeInRight" data-delay=".8s">꿀 피부 에약 완료!</p>
+                                    <!-- Hero-btn -->
+                                    <div class="hero__btn" data-animation="fadeInRight" data-delay="1s">
+                                        <a href="industries.html" class="btn hero-btn">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slider slider-height" data-background="resources/assets/img/hero/h1_hero.jpg">
+                    <div class="container">
+                        <div class="row d-flex align-items-center justify-content-between">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block">
+                                <div class="hero__img" data-animation="bounceIn" data-delay=".4s">
+                                    <img src="resources/assets/img/hero/kim02.png" alt="">
                                 </div>
                             </div>
                             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8">
@@ -233,7 +233,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="single-category mb-30">
                             <div class="category-img">
-                                <img src="${pageContext.request.contextPath}/resources/assets/img/categori/cat1.jpg" alt="">
+                                <img src="resources/assets/img/categori/8.png" alt="">
                                 <div class="category-caption">
                                     <h2>Owmen`s</h2>
                                     <span class="best"><a href="#">Best New Deals</a></span>
@@ -245,7 +245,7 @@
                      <div class="col-xl-4 col-lg-6">
                         <div class="single-category mb-30">
                             <div class="category-img text-center">
-                                <img src="${pageContext.request.contextPath}/resources/assets/img/categori/cat2.jpg" alt="">
+                                <img src="resources/assets/img/categori/7.jpg" alt="">
                                 <div class="category-caption">
                                     <span class="collection">Discount!</span>
                                     <h2>Winter Cloth</h2>
@@ -257,7 +257,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="single-category mb-30">
                             <div class="category-img">
-                                <img src="${pageContext.request.contextPath}/resources/assets/img/categori/cat3.jpg" alt="">
+                                <img src="resources/assets/img/categori/2.jpg" alt="">
                                 <div class="category-caption">
                                     <h2>Man`s Cloth</h2>
                                     <span class="best"><a href="#">Best New Deals</a></span>
@@ -297,13 +297,13 @@
                 </div>
                 <!-- Nav Card -->
                 <div class="tab-content" id="nav-tabContent">
-                    <!-- card one -->
+                    <!-- ALL 부분 -->
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product1.png" alt="">
+                                        <img src="resources/assets/img/categori/cream6.jpg" alt="">
                                         <div class="new-product">
                                             <span>New</span>
                                         </div>
@@ -316,7 +316,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">첫번째 물건 입니다.</a></h4>
+                                        <h4><a href="#">워터뱅크 아이 젤</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -329,7 +329,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product2.png" alt="">
+                                        <img src="resources/assets/img/categori/cream2.png" alt="">
                                     </div>
                                     <div class="product-caption">
                                         <div class="product-ratting">
@@ -339,7 +339,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <h4><a href="#">피토알렉신 진정 보습 크림</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -352,7 +352,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product3.png" alt="">
+                                        <img src="resources/assets/img/categori/cream3.png" alt="">
                                         <div class="new-product">
                                             <span>New</span>
                                         </div>
@@ -365,7 +365,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <h4><a href="#">크림 스킨</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -378,7 +378,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product4.png" alt="">
+                                        <img src="resources/assets/img/categori/cream4.png" alt="">
                                     </div>
                                     <div class="product-caption">
                                         <div class="product-ratting">
@@ -388,7 +388,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <h4><a href="#">크림 스킨 옴므 올인원</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -401,7 +401,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product5.png" alt="">
+                                        <img src="resources/assets/img/categori/cream5.jpg" alt="">
                                     </div>
                                     <div class="product-caption">
                                         <div class="product-ratting">
@@ -411,7 +411,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <h4><a href="#">워터뱅크 하이드로 크림 EX</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -424,7 +424,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product6.png" alt="">
+                                        <img src="resources/assets/img/categori/cream1.png" alt="">
                                         <div class="new-product">
                                             <span>New</span>
                                         </div>
@@ -437,7 +437,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <h4><a href="#">퍼펙트 리뉴 유스 리제너레이팅 아이 크림</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -449,59 +449,13 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Card two -->
+                    <!-- NEW 부분 -->
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product4.png" alt="">
-                                    </div>
-                                    <div class="product-caption">
-                                        <div class="product-ratting">
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                        </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
-                                        <div class="price">
-                                            <ul>
-                                                <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="single-product mb-60">
-                                    <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product5.png" alt="">
-                                    </div>
-                                    <div class="product-caption">
-                                        <div class="product-ratting">
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                        </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
-                                        <div class="price">
-                                            <ul>
-                                                <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="single-product mb-60">
-                                    <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product6.png" alt="">
+                                        <img src="resources/assets/img/categori/cream1.png" alt="">
                                         <div class="new-product">
                                             <span>New</span>
                                         </div>
@@ -514,7 +468,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <h4><a href="#">퍼펙트 리뉴 유스 리제너레이팅 아이 크림</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -527,7 +481,10 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product2.png" alt="">
+                                        <img src="resources/assets/img/categori/cream3.png" alt="">
+                                        <div class="new-product">
+                                            <span>New</span>
+                                        </div>
                                     </div>
                                     <div class="product-caption">
                                         <div class="product-ratting">
@@ -537,7 +494,56 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <h4><a href="#">라네즈-크림 스킨</a></h4>
+                                        <div class="price">
+                                            <ul>
+                                                <li>$40.00</li>
+                                                <li class="discount">$60.00</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single-product mb-60">
+                                    <div class="product-img">
+                                        <img src="resources/assets/img/categori/cream6.jpg" alt="">
+                                        <div class="new-product">
+                                            <span>New</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-caption">
+                                        <div class="product-ratting">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                        </div>
+                                        <h4><a href="#">워터뱅크 아이 젤</a></h4>
+                                        <div class="price">
+                                            <ul>
+                                                <li>$40.00</li>
+                                                <li class="discount">$60.00</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single-product mb-60">
+                                    <div class="product-img">
+                                        <img src="resources/assets/img/categori/toner1.jpg" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <div class="product-ratting">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                        </div>
+                                        <h4><a href="#">어성초 77% 토너</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -550,10 +556,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product3.png" alt="">
-                                        <div class="new-product">
-                                            <span>New</span>
-                                        </div>
+                                        <img src="resources/assets/img/categori/toner2.jpg" alt="">
                                     </div>
                                     <div class="product-caption">
                                         <div class="product-ratting">
@@ -563,7 +566,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <h4><a href="#">캐리오피 포츌라카 토너</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -576,7 +579,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product1.png" alt="">
+                                        <img src="resources/assets/img/categori/toner4.jpg" alt="">
                                         <div class="new-product">
                                             <span>New</span>
                                         </div>
@@ -589,7 +592,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <h4><a href="#">브링그린 티트리 시카 수딩 토너</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -601,191 +604,13 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Card three -->
+                    <!--  사용안함 제외할 예정 Card three -->
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product2.png" alt="">
-                                    </div>
-                                    <div class="product-caption">
-                                        <div class="product-ratting">
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                        </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
-                                        <div class="price">
-                                            <ul>
-                                                <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="single-product mb-60">
-                                    <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product3.png" alt="">
-                                        <div class="new-product">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-caption">
-                                        <div class="product-ratting">
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                        </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
-                                        <div class="price">
-                                            <ul>
-                                                <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="single-product mb-60">
-                                    <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product1.png" alt="">
-                                        <div class="new-product">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-caption">
-                                        <div class="product-ratting">
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                        </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
-                                        <div class="price">
-                                            <ul>
-                                                <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="single-product mb-60">
-                                    <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product4.png" alt="">
-                                    </div>
-                                    <div class="product-caption">
-                                        <div class="product-ratting">
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                        </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
-                                        <div class="price">
-                                            <ul>
-                                                <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="single-product mb-60">
-                                    <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product6.png" alt="">
-                                        <div class="new-product">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-caption">
-                                        <div class="product-ratting">
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                        </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
-                                        <div class="price">
-                                            <ul>
-                                                <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="single-product mb-60">
-                                    <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product5.png" alt="">
-                                    </div>
-                                    <div class="product-caption">
-                                        <div class="product-ratting">
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                        </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
-                                        <div class="price">
-                                            <ul>
-                                                <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- card foure -->
-                    <div class="tab-pane fade" id="nav-last" role="tabpanel" aria-labelledby="nav-last-tab">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="single-product mb-60">
-                                    <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product1.png" alt="">
-                                        <div class="new-product">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-caption">
-                                        <div class="product-ratting">
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                        </div>
-                                        <h4><a href="#">Green Dress with details</a></h4>
-                                        <div class="price">
-                                            <ul>
-                                                <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="single-product mb-60">
-                                    <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product2.png" alt="">
+                                        <img src="assets/img/categori/product2.png" alt="">
                                     </div>
                                     <div class="product-caption">
                                         <div class="product-ratting">
@@ -834,7 +659,10 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product4.png" alt="">
+                                        <img src="assets/img/categori/product1.png" alt="">
+                                        <div class="new-product">
+                                            <span>New</span>
+                                        </div>
                                     </div>
                                     <div class="product-caption">
                                         <div class="product-ratting">
@@ -857,7 +685,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product5.png" alt="">
+                                        <img src="assets/img/categori/product4.png" alt="">
                                     </div>
                                     <div class="product-caption">
                                         <div class="product-ratting">
@@ -880,7 +708,182 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="${pageContext.request.contextPath}/resources/assets/img/categori/product6.png" alt="">
+                                        <img src="assets/img/categori/product6.png" alt="">
+                                        <div class="new-product">
+                                            <span>New</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-caption">
+                                        <div class="product-ratting">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                        </div>
+                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <div class="price">
+                                            <ul>
+                                                <li>$40.00</li>
+                                                <li class="discount">$60.00</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single-product mb-60">
+                                    <div class="product-img">
+                                        <img src="assets/img/categori/product5.png" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <div class="product-ratting">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                        </div>
+                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <div class="price">
+                                            <ul>
+                                                <li>$40.00</li>
+                                                <li class="discount">$60.00</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 사용안함 제외할 예정 card foure -->
+                    <div class="tab-pane fade" id="nav-last" role="tabpanel" aria-labelledby="nav-last-tab">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single-product mb-60">
+                                    <div class="product-img">
+                                        <img src="assets/img/categori/product1.png" alt="">
+                                        <div class="new-product">
+                                            <span>New</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-caption">
+                                        <div class="product-ratting">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                        </div>
+                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <div class="price">
+                                            <ul>
+                                                <li>$40.00</li>
+                                                <li class="discount">$60.00</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single-product mb-60">
+                                    <div class="product-img">
+                                        <img src="assets/img/categori/product2.png" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <div class="product-ratting">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                        </div>
+                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <div class="price">
+                                            <ul>
+                                                <li>$40.00</li>
+                                                <li class="discount">$60.00</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single-product mb-60">
+                                    <div class="product-img">
+                                        <img src="assets/img/categori/product3.png" alt="">
+                                        <div class="new-product">
+                                            <span>New</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-caption">
+                                        <div class="product-ratting">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                        </div>
+                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <div class="price">
+                                            <ul>
+                                                <li>$40.00</li>
+                                                <li class="discount">$60.00</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single-product mb-60">
+                                    <div class="product-img">
+                                        <img src="assets/img/categori/product4.png" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <div class="product-ratting">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                        </div>
+                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <div class="price">
+                                            <ul>
+                                                <li>$40.00</li>
+                                                <li class="discount">$60.00</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single-product mb-60">
+                                    <div class="product-img">
+                                        <img src="assets/img/categori/product5.png" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <div class="product-ratting">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                            <i class="far fa-star low-star"></i>
+                                        </div>
+                                        <h4><a href="#">Green Dress with details</a></h4>
+                                        <div class="price">
+                                            <ul>
+                                                <li>$40.00</li>
+                                                <li class="discount">$60.00</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single-product mb-60">
+                                    <div class="product-img">
+                                        <img src="assets/img/categori/product6.png" alt="">
                                         <div class="new-product">
                                             <span>New</span>
                                         </div>
@@ -912,7 +915,7 @@
         <!-- Latest Products End -->
         <!-- Best Product Start -->
         <div class="best-product-area lf-padding" >
-           <div class="product-wrapper bg-height" style="background-image: url('assets/img/categori/card.png')">
+           <div class="product-wrapper bg-height" style="background-image: url('resources/assets/img/categori/card.png')">
                 <div class="container position-relative">
                     <div class="row justify-content-between align-items-end">
                         <div class="product-man position-absolute  d-none d-lg-block">
@@ -935,7 +938,7 @@
            </div>
            <!-- Shape -->
            <div class="shape bounce-animate d-none d-md-block">
-               <img src="${pageContext.request.contextPath}/resources/assets/img/categori/card-shape.png" alt="">
+               <img src="assets/img/categori/card-shape.png" alt="">
            </div>
         </div>
         <!-- Best Product End-->
@@ -951,13 +954,13 @@
                             <a href="#" class="btn shop1-btn">Shop Now</a>
                         </div>
                         <div class="best-left-img mb-30 d-none d-sm-block">
-                            <img src="${pageContext.request.contextPath}/resources/assets/img/collection/collection1.png" alt="">
+                            <img src="assets/img/collection/collection1.png" alt="">
                         </div>
                     </div>
                     <!-- Mid Img -->
                      <div class="col-xl-2 col-lg-2 d-none d-lg-block">
                         <div class="best-mid-img mb-30 ">
-                            <img src="${pageContext.request.contextPath}/resources/assets/img/collection/collection2.png" alt="">
+                            <img src="assets/img/collection/collection2.png" alt="">
                         </div>
                     </div>
                     <!-- Riht Caption -->
@@ -968,7 +971,7 @@
                                    <h4>Menz Winter<br> Jacket</h4>
                                </div>
                                <div class="single-img">
-                                  <img src="${pageContext.request.contextPath}/resources/assets/img/collection/collection3.png" alt="">
+                                  <img src="assets/img/collection/collection3.png" alt="">
                                </div>
                            </div>
                         </div>
@@ -978,7 +981,7 @@
                                    <h4>Menz Winter<br>Jacket</h4>
                                </div>
                                <div class="single-img">
-                                  <img src="${pageContext.request.contextPath}/resources/assets/img/collection/collection4.png" alt="">
+                                  <img src="assets/img/collection/collection4.png" alt="">
                                </div>
                            </div>
                         </div>
@@ -988,7 +991,7 @@
                                    <h4>Menz Winter<br> Jacket</h4>
                                </div>
                                <div class="single-img">
-                                  <img src="${pageContext.request.contextPath}/resources/assets/img/collection/collection5.png" alt="">
+                                  <img src="assets/img/collection/collection5.png" alt="">
                                </div>
                            </div>
                         </div>
@@ -999,7 +1002,7 @@
         <!-- Best Collection End -->
         <!-- Latest Offers Start -->
         <div class="latest-wrapper lf-padding">
-            <div class="latest-area latest-height d-flex align-items-center" data-background="${pageContext.request.contextPath}/resources/assets/img/collection/latest-offer.png">
+            <div class="latest-area latest-height d-flex align-items-center" data-background="resources/assets/img/collection/latest-offer.png">
                 <div class="container">
                     <div class="row d-flex align-items-center">
                         <div class="col-xl-5 col-lg-5 col-md-6 offset-xl-1 offset-lg-1">
@@ -1020,7 +1023,7 @@
                 </div>
                 <!-- man Shape -->
                 <div class="man-shape">
-                    <img src="${pageContext.request.contextPath}/resources/assets/img/collection/latest-man.png" alt="">
+                    <img src="assets/img/collection/latest-man.png" alt="">
                 </div>
             </div>
         </div>
@@ -1060,19 +1063,19 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="gallery-items">
-                            <img src="${pageContext.request.contextPath}/resources/assets/img/gallery/gallery1.jpg" alt="">
+                            <img src="assets/img/gallery/gallery1.jpg" alt="">
                         </div> 
                         <div class="gallery-items">
-                            <img src="${pageContext.request.contextPath}/resources/assets/img/gallery/gallery2.jpg" alt="">
+                            <img src="assets/img/gallery/gallery2.jpg" alt="">
                         </div>
                         <div class="gallery-items">
-                            <img src="${pageContext.request.contextPath}/resources/assets/img/gallery/gallery3.jpg" alt="">
+                            <img src="assets/img/gallery/gallery3.jpg" alt="">
                         </div>
                         <div class="gallery-items">
-                            <img src="${pageContext.request.contextPath}/resources/assets/img/gallery/gallery4.jpg" alt="">
+                            <img src="assets/img/gallery/gallery4.jpg" alt="">
                         </div>
                         <div class="gallery-items">
-                            <img src="${pageContext.request.contextPath}/resources/assets/img/gallery/gallery5.jpg" alt="">
+                            <img src="assets/img/gallery/gallery5.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -1092,7 +1095,7 @@
                         <div class="single-footer-caption mb-30">
                              <!-- logo -->
                             <div class="footer-logo">
-                                <a href="index.html"><img src="${pageContext.request.contextPath}/resources/assets/img/logo/logo2_footer.png" alt=""></a>
+                                <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
@@ -1168,45 +1171,42 @@
        <!-- Footer End-->
 
    </footer>
+   
+	<!-- JS here -->
+	
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="resources/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="resources/assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="resources/assets/js/popper.min.js"></script>
+        <script src="resources/assets/js/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="resources/assets/js/jquery.slicknav.min.js"></script>
 
-<!-- JS here -->
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="resources/assets/js/owl.carousel.min.js"></script>
+        <script src="resources/assets/js/slick.min.js"></script>
 
-    <!-- All JS Custom Plugins Link Here here -->
-    <script src="<c:url value="/resources/assets/js/vendor/modernizr-3.5.0.min.js"/>">
-    
-    <!-- Jquery, Popper, Bootstrap -->
-    
-    <script src="<c:url value="/resources/assets/js/vendor/jquery-1.12.4.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/popper.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/bootstrap.min.js"/>">
-    <!-- Jquery Mobile Menu -->
-    <script src="<c:url value="/resources/assets/js/jquery.slicknav.min.js"/>">
+		<!-- One Page, Animated-HeadLin -->
+        <script src="resources/assets/js/wow.min.js"></script>
+		<script src="resources/assets/js/animated.headline.js"></script>
+        <script src="resources/assets/js/jquery.magnific-popup.js"></script>
 
-    <!-- Jquery Slick , Owl-Carousel Plugins -->
-    <script src="<c:url value="/resources/assets/js/owl.carousel.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/slick.min.js"/>">
-
-    <!-- One Page, Animated-HeadLin -->
-    <script src="<c:url value="/resources/assets/js/wow.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/animated.headline.js"/>">
-    
-    <!-- Scrollup, nice-select, sticky -->
-    <script src="<c:url value="/resources/assets/js/jquery.scrollUp.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/jquery.nice-select.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/jquery.sticky.js"/>">
-    <script src="<c:url value="/resources/assets/js/jquery.magnific-popup.js"/>">
-
-    <!-- contact js -->
-    
-    <script src="<c:url value="/resources/assets/js/contact.js"/>">
-    <script src="<c:url value="/resources/assets/js/jquery.form.js"/>">
-    <script src="<c:url value="/resources/assets/js/jquery.validate.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/mail-script.js"/>">
-    <script src="<c:url value="/resources/assets/js/jquery.ajaxchimp.min.js"/>">
-    
-    <!-- Jquery Plugins, main Jquery -->	
-    <script src="<c:url value="/resources/assets/js/plugins.js"/>">
-    <script src="<c:url value="/resources/assets/js/main.js"/>">
->>>>>>> branch 'main' of https://github.com/Seo-mihyeon/ShoppingMall_miniP.git
-</body>
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="resources/assets/js/jquery.scrollUp.min.js"></script>
+        <script src="resources/assets/js/jquery.nice-select.min.js"></script>
+		<script src="resources/assets/js/jquery.sticky.js"></script>
+        
+        <!-- contact js -->
+        <script src="resources/assets/js/contact.js"></script>
+        <script src="resources/assets/js/jquery.form.js"></script>
+        <script src="resources/assets/js/jquery.validate.min.js"></script>
+        <script src="resources/assets/js/mail-script.js"></script>
+        <script src="resources/assets/js/jquery.ajaxchimp.min.js"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="resources/assets/js/plugins.js"></script>
+        <script src="resources/assets/js/main.js"></script>
+        
+    </body>
 </html>
