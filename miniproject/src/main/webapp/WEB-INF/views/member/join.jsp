@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="zxx">
+<html lang="ko">
 
 <head>
     <meta charset="utf-8">
@@ -39,7 +39,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
 <div class="wrapper">
 	<form id="join_form" method="post">
 	<div class="wrap">
@@ -118,8 +117,6 @@
 				<div class ="address_input_3_wrap">
 					<div class="address_input_3_box">
 						<input class="address_input_3" name="memberAddr3" readonly="readonly">
-=======
-    
     <header>
         <!-- Header Start -->
        <div class="header-area">
@@ -268,7 +265,6 @@
 							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
 							<a class="button button-account" href="login.html">Login Now</a>
 						</div>
->>>>>>> branch 'main' of https://github.com/Seo-mihyeon/ShoppingMall_miniP.git
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -303,8 +299,95 @@
 		</div>
 	</section>
 	<!--================End Login Box Area =================-->
+    <footer>
+        <!-- Footer Start-->
+        <div class="footer-area footer-padding2">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                       <div class="single-footer-caption mb-50">
+                         <div class="single-footer-caption mb-30">
+                              <!-- logo -->
+                             <div class="footer-logo">
+                                 <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                             </div>
+                             <div class="footer-tittle">
+                                 <div class="footer-pera">
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+                                </div>
+                             </div>
+                         </div>
+                       </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#"> Offers & Discounts</a></li>
+                                    <li><a href="#"> Get Coupon</a></li>
+                                    <li><a href="#">  Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>New Products</h4>
+                                <ul>
+                                    <li><a href="#">Woman Cloth</a></li>
+                                    <li><a href="#">Fashion Accessories</a></li>
+                                    <li><a href="#"> Man Accessories</a></li>
+                                    <li><a href="#"> Rubber made Toys</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Support</h4>
+                                <ul>
+                                 <li><a href="#">Frequently Asked Questions</a></li>
+                                 <li><a href="#">Terms & Conditions</a></li>
+                                 <li><a href="#">Privacy Policy</a></li>
+                                 <li><a href="#">Privacy Policy</a></li>
+                                 <li><a href="#">Report a Payment Issue</a></li>
+                             </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer bottom -->
+                <div class="row">
+                 <div class="col-xl-7 col-lg-7 col-md-7">
+                     <div class="footer-copy-right">
+                         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>                </div>
+                 </div>
+                  <div class="col-xl-5 col-lg-5 col-md-5">
+                     <div class="footer-copy-right f-right">
+                         <!-- social -->
+                         <div class="footer-social">
+                             <a href="#"><i class="fab fa-twitter"></i></a>
+                             <a href="#"><i class="fab fa-facebook-f"></i></a>
+                             <a href="#"><i class="fab fa-behance"></i></a>
+                             <a href="#"><i class="fas fa-globe"></i></a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+            </div>
+        </div>
+    
+        <!-- Footer End-->
+    </footer>
 
-<<<<<<< HEAD
+<!-- JS here -->
+<script>
 var idCheck = false; // 아이디
 var idckCheck = false; // 아이디 중복 검사
 var pwCheck = false;   // 비번
@@ -498,96 +581,7 @@ $('.pwck_input').on("propertychange change keyup paste input", function(){
 	var pw = $('.pw_input').val();
     var pwck = $('.pwck_input').val();
     $('.final_pwck_ck').css('display', 'none');
-=======
-    <footer>
-        <!-- Footer Start-->
-        <div class="footer-area footer-padding2">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
-                       <div class="single-footer-caption mb-50">
-                         <div class="single-footer-caption mb-30">
-                              <!-- logo -->
-                             <div class="footer-logo">
-                                 <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                             </div>
-                             <div class="footer-tittle">
-                                 <div class="footer-pera">
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
-                                </div>
-                             </div>
-                         </div>
-                       </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#"> Offers & Discounts</a></li>
-                                    <li><a href="#"> Get Coupon</a></li>
-                                    <li><a href="#">  Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>New Products</h4>
-                                <ul>
-                                    <li><a href="#">Woman Cloth</a></li>
-                                    <li><a href="#">Fashion Accessories</a></li>
-                                    <li><a href="#"> Man Accessories</a></li>
-                                    <li><a href="#"> Rubber made Toys</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Support</h4>
-                                <ul>
-                                 <li><a href="#">Frequently Asked Questions</a></li>
-                                 <li><a href="#">Terms & Conditions</a></li>
-                                 <li><a href="#">Privacy Policy</a></li>
-                                 <li><a href="#">Privacy Policy</a></li>
-                                 <li><a href="#">Report a Payment Issue</a></li>
-                             </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Footer bottom -->
-                <div class="row">
-                 <div class="col-xl-7 col-lg-7 col-md-7">
-                     <div class="footer-copy-right">
-                         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>                </div>
-                 </div>
-                  <div class="col-xl-5 col-lg-5 col-md-5">
-                     <div class="footer-copy-right f-right">
-                         <!-- social -->
-                         <div class="footer-social">
-                             <a href="#"><i class="fab fa-twitter"></i></a>
-                             <a href="#"><i class="fab fa-facebook-f"></i></a>
-                             <a href="#"><i class="fab fa-behance"></i></a>
-                             <a href="#"><i class="fas fa-globe"></i></a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-            </div>
-        </div>
->>>>>>> branch 'main' of https://github.com/Seo-mihyeon/ShoppingMall_miniP.git
-    
-        <!-- Footer End-->
-    </footer>
-
-<!-- JS here -->
+</script>
 
     <!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
