@@ -14,7 +14,6 @@
 </head>
 </head>
 <body>
-<%@include file="../includes/admin/header.jsp" %>
 			<div class="wrapper">
         <div class="wrap">
             <!-- gnv_area -->    
@@ -42,7 +41,7 @@
                             <a class="admin_list_02">상품 목록</a>
                         </li>
                         <lI>
-                            <a class="admin_list_05">회원 관리</a>                            
+                            <a class="admin_list_03">회원 관리</a>                            
                         </lI>                                                                                             
                     </ul>
 					<!-- 

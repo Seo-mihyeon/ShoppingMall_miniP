@@ -1,0 +1,37 @@
+/* 기능 css 이외의 속성들은 압축해놨습니다. */
+@charset "UTF-8";*{margin:0;padding:0}.wrapper{width:1900px}.wrap{width:1080px;margin:auto}.top_gnb_area{width:100%;height:50px;background-color:#a2a2ea}.top_area{width:100%;height:150px}.logo_area{width:25%;height:100%;background-color:red;float:left}.search_area{width:50%;height:100%;background-color:#ff0;float:left}.login_area{width:25%;height:100%;display:inline-block;text-align:center}.login_button{height:50%;background-color:#d4dfe6;margin-top:30px;line-height:77px;font-size:40px;font-weight:900;border-radius:10px;cursor:pointer}.login_area>span{margin-top:10px;font-weight:900;display:inline-block}.login_button{height:50%;background-color:#d4dfe6;margin-top:30px}.navi_bar_area{width:100%;height:70px;background-color:#7696fd}.content_area{width:100%;background-color:#97ef97;height:1000px}.clearfix{clear:both}
+
+a{
+    text-decoration: none;
+}
+ 
+.top_gnb_area{
+    position:relative;
+}
+ 
+.top_gnb_area .list{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    
+}
+ 
+.top_gnb_area .list li{
+    list-style: none;    
+    float : left;
+    padding: 13px 15px 0 10px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.login_success_area>a{
+    font-size: 15px;
+    font-weight: 900;
+    display: inline-block;
+    margin-top: 5px;
+    background: #e1e5e8;
+    width: 82px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 25px;
+    color: #606267;    
+}
