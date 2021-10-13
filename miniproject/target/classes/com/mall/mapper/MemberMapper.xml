@@ -15,4 +15,10 @@
 		SELECT COUNT(*) FROM SHOP_MEMBER WHERE MEMBERID = #{memberId}
 		]]>
 	</select>
+
+	<select id="memberCheck" resultType="int">
+		<![CDATA[
+		SELECT * FROM SHOP_MEMBER WHERE MEMBERID = #{memberId}
+		]]>
+	</select>
 </mapper>
