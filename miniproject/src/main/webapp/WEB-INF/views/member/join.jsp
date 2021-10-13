@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Register </title>
+    <title>회원가입</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -48,32 +48,11 @@
                        <div class="col-xl-12">
                             <div class="row d-flex justify-content-between align-items-center">
                                 <div class="header-info-left d-flex">
-                                    <div class="flag">
-                                        <img src="assets/img/icon/header_icon.png" alt="">
-                                    </div>
-                                    <div class="select-this">
-                                        <form action="#">
-                                            <div class="select-itms">
-                                                <select name="select" id="select1">
-                                                    <option value="">USA</option>
-                                                    <option value="">SPN</option>
-                                                    <option value="">CDA</option>
-                                                    <option value="">USD</option>
-                                                </select>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <ul class="contact-now">     
-                                        <li>+777 2345 7886</li>
-                                    </ul>
+                                       
                                 </div>
                                 <div class="header-info-right">
                                    <ul>                                          
                                        <li><a href="login.html">My Account </a></li>
-                                       <li><a href="product_list.html">Wish List  </a></li>
-                                       <li><a href="cart.html">Shopping</a></li>
-                                       <li><a href="cart.html">Cart</a></li>
-                                       <li><a href="checkout.html">Checkout</a></li>
                                    </ul>
                                 </div>
                             </div>
@@ -86,7 +65,7 @@
                             <!-- Logo -->
                             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
                                 <div class="logo">
-                                  <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                  <a href="index.html"><img src="${pageContext.request.contextPath}/resources/assets/img/logo/logo.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
@@ -102,24 +81,6 @@
                                                     <li><a href="single-product.html"> Product Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="blog.html">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Pages</a>
-                                                <ul class="submenu">
-                                                    <li><a href="login.html">Login</a></li>
-                                                    <li><a href="cart.html">Card</a></li>
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="confirmation.html">Confirmation</a></li>
-                                                    <li><a href="cart.html">Shopping Cart</a></li>
-                                                    <li><a href="checkout.html">Product Checkout</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -134,16 +95,6 @@
                                             </div>
                                         </div>
                                      </li>
-                                    <li class=" d-none d-xl-block">
-                                        <div class="favorit-items">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="shopping-card">
-                                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-                                        </div>
-                                    </li>
                                    <li class="d-none d-lg-block"> <a href="#" class="btn header-btn">Sign in</a></li>
                                 </ul>
                             </div>
@@ -177,14 +128,16 @@
     </div>
     <!-- slider Area End-->
 
-    <!--================Login Box Area =================-->
+    <!--================Register Box Area =================-->
 	<section class="login_box_area section-margin">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="login_box_img">
 						<div class="hover">
+						<br><br><br><br><br><br>
 							<h4>Already have an account?</h4>
+							
 							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
 							<a class="button button-account" href="login.html">Login Now</a>
 						</div>
@@ -194,18 +147,61 @@
 					<div class="login_form_inner register_form_inner">
 						<h3>Create an account</h3>
 						<form class="row login_form" action="#/" id="register_form" >
-							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+						<!-- 아이디 -->
+							<div class="col-md-12 form-group id_wrap">
+								<input type="text" class="form-control id_name" id="id" name="ud" placeholder="UserId" onfocus="this.placeholder = ''" onblur="this.placeholder = 'UserId'">
+								
+								<!-- 한글 인코딩 깨짐  -->
+								<span class="id_input_re_1">사용 가능한 아이디입니다.</span>
+								<span class="id_input_re_2">아이디가 이미 존재합니다.</span>
+								<span class="final_id_ck">아이디를 입력해주세요.</span>
+											
 							</div>
-							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
-              </div>
-              <div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
-              </div>
-              <div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'">
+						<!-- 비밀번호 -->
+							<div class="col-md-12 form-group pw_name">
+								<input type="text" class="form-control pw_name" id="password" name="password" placeholder="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+				           
+					            <span class="final_pw_ck">비밀번호를 입력해주세요.</span>
+								<span class="pwck_input_re_1">비밀번호가 일치합니다.</span>
+				                <span class="pwck_input_re_2">비밀번호가 일치하지 않습니다.</span>
+							            
+				            </div>
+						<!-- 비밀번호 확인 -->
+				              <div class="col-md-12 form-group pwck_wrap">
+								<input type="text" class="form-control pwck_name" id="chpassword" name="password" placeholder="Password check" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+				              
+				              <span class="final_pwck_ck">비밀번호 확인을 입력해주세요.</span>
+				              </div>
+						<!-- 이름 -->				              
+              				<div class="col-md-12 form-group user_wrap">
+								<input type="text" class="form-control user_name" id="name" name="name" placeholder="UserName" onfocus="this.placeholder = ''" onblur="this.placeholder = 'UserName'">
 							</div>
+						<!-- 연락처 -->				              
+              				<div class="col-md-12 form-group phone_wrap">
+								<input type="text" class="form-control phone_name" id="phonenumber" name="phonenumber" placeholder="PhoneNumber" onfocus="this.placeholder = ''" onblur="this.placeholder = 'PhoneNumber'">
+							</div>
+								
+						<!-- 이메일 -->
+							<div class="col-md-12 form-group mail_name">
+								<input type="text" class="form-control mail_name" id="email" name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'">
+							</div>
+						<!-- 생년월일 -->
+							<div class="col-md-12 form-group birth_name">
+								<input type="text" class="form-control birth_name" id="birth" name="birth" placeholder="Birth" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Birth'">
+							</div>
+						<!-- 주소 -->
+							<div class="col-md-12 form-group address_wrap">
+								<input type="text" class="form-control address_input_1_wrap" id="confirmPassword" name="confirmPassword" placeholder="우편주소" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'">
+								<input type="text" class="form-control address_input_2_wrap" id="confirmPassword" name="confirmPassword" placeholder="기본주소" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'">
+								<input type="text" class="form-control address_input_3_wrap" id="confirmPassword" name="confirmPassword" placeholder="상세 주소 항목" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'">
+								<div class="address_button" onclick="address()">
+									<span>address find</span>
+								</div>
+							</div>
+							
+							
+							
+							
 							<div class="col-md-12 form-group">
 								<div class="creat_account">
 									<input type="checkbox" id="f-option2" name="selector">
@@ -223,6 +219,203 @@
 	</section>
 	<!--================End Login Box Area =================-->
 
+<!-- 회원가입 변수 관련 항목 사항 -->
+<script>
+
+var idCheck = false; // 아이디
+var idckCheck = false; // 아이디 중복 검사
+var pwCheck = false;   // 비번
+var pwckCheck = false; // 비번 확인
+var pwckcorCheck = false; // 비번 확인 일치 확인
+var nameCheck = false; // 이름
+var phoneCheck = false; // 연락처 
+var mailCheck = false; // 이메일
+var birthCheck = false; // 생년월일
+var addressCheck = false // 주소
+
+$(document).ready(function(){
+	// 회원가입 버튼(회원가입 기능 작동)
+	$(".join_button").click(function(){
+		
+		/* 입력값 변수 */
+        var id = $('.id_input').val();                 // id 입력란
+        var pw = $('.pw_input').val();                // 비밀번호 입력란
+        var pwck = $('.pwck_input').val();            // 비밀번호 확인 입력란
+        var name = $('.user_input').val();            // 이름 입력란
+        var phone = $('.phone_input').val();        // 연락처 입력란
+        var mail = $('.mail_input').val();            // 이메일 입력란
+        var birth = $('.birth_input').val();            // 생일 입력란
+        var addr = $('.address_input_3').val();        // 주소 입력란
+        
+        /* 아이디 유효성검사 */
+        if(id == ""){
+            $('.final_id_ck').css('display','block');
+            idCheck = false;
+        }else{
+            $('.final_id_ck').css('display', 'none');
+            idCheck = true;
+        }
+        
+        /* 비밀번호 유효성 검사 */
+        if(pw == ""){
+            $('.final_pw_ck').css('display','block');
+            pwCheck = false;
+        }else{
+            $('.final_pw_ck').css('display', 'none');
+            pwCheck = true;
+        }
+        
+        /* 비밀번호 확인 유효성 검사 */
+        if(pwck == ""){
+            $('.final_pwck_ck').css('display','block');
+            pwckCheck = false;
+        }else{
+            $('.final_pwck_ck').css('display', 'none');
+            pwckCheck = true;
+        }
+        
+        /* 이름 유효성 검사 */
+        if(name == ""){
+            $('.final_name_ck').css('display','block');
+            nameCheck = false;
+        }else{
+            $('.final_name_ck').css('display', 'none');
+            nameCheck = true;
+        }
+        
+        /* 연락처 유효성 검사 */
+        if(name == ""){
+            $('.final_phone_ck').css('display','block');
+            phoneCheck = false;
+        }else{
+            $('.final_phone_ck').css('display', 'none');
+            phoneCheck = true;
+        }
+        
+        /* 이메일 유효성 검사 */
+        if(mail == ""){
+            $('.final_mail_ck').css('display','block');
+            mailCheck = false;
+        }else{
+            $('.final_mail_ck').css('display', 'none');
+            mailCheck = true;
+        }
+        
+        /* 생년월일 유효성 검사 */
+        if(mail == ""){
+            $('.final_birth_ck').css('display','block');
+            birthCheck = false;
+        }else{
+            $('.final_birth_ck').css('display', 'none');
+            birthCheck = true;
+        }
+        
+        /* 주소 유효성 검사 */
+        if(addr == ""){
+            $('.final_addr_ck').css('display','block');
+            addressCheck = false;
+        }else{
+            $('.final_addr_ck').css('display', 'none');
+            addressCheck = true;
+        }
+
+        /* 최종 유효성 검사 */
+        if(idCheck&&idckCheck&&pwCheck&&pwckCheck&&pwckcorCheck&&nameCheck&&phoneCheck&&mailCheck&&birthCheck&&addressCheck){
+
+        	$("#join_form").attr("action", "/member/join");
+        	$("#join_form").submit();
+ 			
+        }    
+        
+        return false;
+ 
+	});
+});
+	
+/* 아이디 중복검사 */
+$('.id_input').on("propertychange change keyup paste input", function(){
+	var memberId = $('.id_input').val(); // id에 입력되는 값
+	var data = {memberId : memberId} // '컨트롤에 넘길 데이터 이름' : '데이터(.id_input에 입력되는 값)'
+	
+	$.ajax({
+		type : "post",
+		url : "/member/memberIdChk",
+		data : data,
+		success : function(result){
+			// console.log("성공여부" + result);
+			if(result != 'fail'){
+				$('.id_input_re_1').css("display", "inline-block");
+				$('.id_input_re_2').css("display", "none");
+				// 아이디 중복이 없는 경우
+				idckCheck = true;
+			} else {
+				$('.id_input_re_2').css("display", "inline-block");
+				$('.id_input_re_1').css("display", "none");
+				// 아이디 중복된 경우
+				idckCheck = false;
+			}
+		} // success 종료
+	}); // ajax 종료
+}); // function 종료
+
+/* 다음 주소 연동 */
+function address(){
+ 
+    new daum.Postcode({
+        oncomplete: function(data) {
+        	// 노출 규칙에 따라 주소를 조합한다.
+            // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+            var addr = ''; // 주소 변수
+            var extraAddr = ''; // 참고항목 변수
+
+            //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+            if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                addr = data.roadAddress;
+            } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                addr = data.jibunAddress;
+            }
+
+            // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+            if(data.userSelectedType === 'R'){
+                // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                    extraAddr += data.bname;
+                }
+                // 건물명이 있고, 공동주택일 경우 추가한다.
+                if(data.buildingName !== '' && data.apartment === 'Y'){
+                    extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                }
+                // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                if(extraAddr !== ''){
+                    extraAddr = ' (' + extraAddr + ')';
+                }
+                // 조합된 참고항목을 해당 필드에 넣는다.
+                addr += extraAddr;
+            
+            } else {
+            	addr += ' ';
+            }
+
+            // 우편번호와 주소 정보를 해당 필드에 넣는다.
+            $(".address_input_1").val(data.zonecode);
+            $(".address_input_2").val(addr);
+            // 커서를 상세주소 필드로 이동한다.
+            $(".address_input_3").attr("readonly",false);
+            $(".address_input_3").focus();
+        }
+    }).open();    
+}
+/* 비밀번호 확인 일치 유효성 검사 */
+$('.pwck_input').on("propertychange change keyup paste input", function(){
+	
+	var pw = $('.pw_input').val();
+    var pwck = $('.pwck_input').val();
+    $('.final_pwck_ck').css('display', 'none');
+ </script>
+ 
+ <!-- 변수 사항 끝 !! -->
+ 
     <footer>
         <!-- Footer Start-->
         <div class="footer-area footer-padding2">
@@ -306,10 +499,10 @@
              </div>
             </div>
         </div>
+
     
         <!-- Footer End-->
     </footer>
-
 <!-- JS here -->
 
     <!-- All JS Custom Plugins Link Here here -->
@@ -348,5 +541,4 @@
     <script src="./assets/js/main.js"></script>
 
 </body>
-    
 </html>
