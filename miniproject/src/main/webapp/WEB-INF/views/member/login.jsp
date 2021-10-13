@@ -8,6 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>로그인</title>
+<script
+	src="https://code.jquery.com/jquery-3.4.1.js"
+   	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
 	<!-- 이미지 불러오기 -->
 	<link rel="manifest" href="site.webmanifest">
 	
@@ -196,17 +200,20 @@
 					<div class="login_form_inner">
 						<h3>Log in to enter</h3>
 						<!-- 로그인 폼 class name : login_wrap -->
-						<form class="row login_form login_wrap" action="#/" id="contactForm" >
+						<form class="row login_form login_wrap" id="login_form" method="post" >
 							<!-- id wrap class name : id_wrap -->
 							<div class="col-md-12 form-group id_wrap">
 													<!-- 아이디 class name :  id_input_box -->
-								<input type="text" class="form-control id_input_box" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+								<input type="text" class="form-control id_input" id="name" name="memberId" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
 							</div>
 							<!-- 비밀번호 wrap class name : pw_wrap -->
 							<div class="col-md-12 form-group pw_wrap">
 													<!-- 비밀번호 class name :  id_input_box -->
-								<input type="text" class="form-control pw_input_box" id="name" name="name" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+								<input type="text" class="form-control pw_input" id="name" name="memberPw" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
 							</div>
+							<c:if test="${result == 0 }">
+							<div class="login_warn">사용자 ID 또는 비밀번호를 잘못 입력하셨습니다.</div>
+							</c:if>
 							<div class="col-md-12 form-group">
 								<div class="creat_account">
 									<input type="checkbox" id="f-option2" name="selector">
@@ -215,7 +222,7 @@
 							</div>
 										<!--  로그인 버튼 wrap class name :  login_button_wrap  -->	
 							<div class="col-md-12 form-group login_button_wrap">
-																		<!-- 로그인 버튼 class name :  id_input_box -->
+										<!-- 로그인 버튼 class name :  id_input_box -->
 								<button type="submit" value="submit" class="button button-login w-100 login_button">Log In</button>
 								<a href="#">Forgot Password?</a>
 							</div>
@@ -310,13 +317,19 @@
              </div>
             </div>
         </div>
-    
         <!-- Footer End-->
     </footer>
 
-	</div>
-	
 	<!-- JS here -->
+<script>
+	/* 로그인 버튼 클릭 메서드 */
+	$(".login_button").click(function() {
+		//alert("로그인 버튼 작동");	
+		
+		$("#login_form").attr("action", "/member/login.do");
+		$("#login_form").submit();
+	})
+</script>	
 
     <!-- All JS Custom Plugins Link Here here -->
     <script src="<c:url value="/resources/assets/js/vendor/modernizr-3.5.0.min.js"/>">

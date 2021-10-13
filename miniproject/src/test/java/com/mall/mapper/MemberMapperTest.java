@@ -32,13 +32,33 @@ public class MemberMapperTest {
 //	}
 	
 	// 아이디 중복 검사 테스트 메서드
+//	@Test
+//	public void memberIdChk() throws Exception{
+//		String id = "test";
+//		String id2 = "abc";
+//		memberMapper.idCheck(id);
+//		memberMapper.idCheck(id2);
+//	}
+	
+	// 로그인 쿼리 mapper 메서드 테스트
 	@Test
-	public void memberIdChk() throws Exception{
-		String id = "test";
-		String id2 = "abc";
-		memberMapper.idCheck(id);
-		memberMapper.idCheck(id2);
+	public void memberLogin() throws Exception{
+		
+		// MemberVO 변수 선언 및 초기화
+		MemberVO member = new MemberVO();
+		
+		// 올바른 아이디 비번 입력 경우
+//		member.setMemberId("test");
+//		member.setMemberPw("test");
+		
+		// 올바르지 않은 아이디 비번 입력 경우
+		member.setMemberId("test123");
+		member.setMemberPw("test123");
+		
+		memberMapper.memberLogin(member);
+		System.out.println("결과 값:" + memberMapper.memberLogin(member));
 	}
+	
 	
 	
 
