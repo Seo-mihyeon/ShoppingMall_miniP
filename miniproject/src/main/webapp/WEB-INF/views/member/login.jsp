@@ -50,29 +50,12 @@
                                     <div class="flag">
                                         <img src="assets/img/icon/header_icon.png" alt="">
                                     </div>
-                                    <div class="select-this">
-                                        <form action="#">
-                                            <div class="select-itms">
-                                                <select name="select" id="select1">
-                                                    <option value="">USA</option>
-                                                    <option value="">SPN</option>
-                                                    <option value="">CDA</option>
-                                                    <option value="">USD</option>
-                                                </select>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <ul class="contact-now">     
-                                        <li>+777 2345 7886</li>
-                                    </ul>
+                                    
                                 </div>
                                 <div class="header-info-right">
                                    <ul>                                          
                                        <li><a href="login.html">My Account </a></li>
-                                       <li><a href="product_list.html">Wish List  </a></li>
-                                       <li><a href="cart.html">Shopping</a></li>
-                                       <li><a href="cart.html">Cart</a></li>
-                                       <li><a href="checkout.html">Checkout</a></li>
+                                       
                                    </ul>
                                 </div>
                             </div>
@@ -101,24 +84,7 @@
                                                     <li><a href="single-product.html"> Product Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="blog.html">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Pages</a>
-                                                <ul class="submenu">
-                                                    <li><a href="/member/login">Login</a></li>
-                                                    <li><a href="cart.html">Card</a></li>
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="confirmation.html">Confirmation</a></li>
-                                                    <li><a href="cart.html">Shopping Cart</a></li>
-                                                    <li><a href="checkout.html">Product Checkout</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            
                                         </ul>
                                     </nav>
                                 </div>
@@ -133,16 +99,7 @@
                                             </div>
                                         </div>
                                      </li>
-                                    <li class=" d-none d-xl-block">
-                                        <div class="favorit-items">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="shopping-card">
-                                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-                                        </div>
-                                    </li>
+                                   
                                    <li class="d-none d-lg-block"> <a href="login.jsp" class="btn header-btn">Sign in</a></li>
                                 </ul>
                             </div>
