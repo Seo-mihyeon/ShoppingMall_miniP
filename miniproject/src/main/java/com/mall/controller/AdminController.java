@@ -11,7 +11,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.mall.model.ItemVO;
 import com.mall.service.AdminService;
-import com.mall.service.ItemService;
 
 @Controller
 @RequestMapping("/admin")
