@@ -76,11 +76,11 @@
                 							<c:if test="${member.adminCk == 1 }">
                 								<li><a href="/admin/main">관리자 페이지 </a></li>
                 							</c:if>
-                								<!-- 회원인경우 마이페이지 항목 보여주기 / 우선 보류-->
+                								<!-- 회원인경우 마이페이지 항목 보여주기 / 우선 보류--> 
                 								<li><a href="/member/mypage">마이페이지</a></li>
-                                      				<!-- post방식의 로그아웃 처리 기능 -->
-                                      			<li><a id="gnb_logout_button">로그아웃</a></li>
-                						</c:if>
+												<!-- get방식의 로그아웃 처리 기능입니다 -->
+												<a href="/member/logout.do">로그아웃</a>                						
+											</c:if>
                                    </ul>
                                 </div>
                             </div>
@@ -149,9 +149,7 @@
                         <div class="row d-flex align-items-center justify-content-between">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block">
                                 <div class="hero__img" data-animation="bounceIn" data-delay=".4s">
-                                	<!-- ìë¨ ì´ë¯¸ì§ ì¬ì±
-                                		ê¹ì ì ì´ 'ë¼ë¤ì¦' ëª¨ë¸ì¸ë° ë¼ë¤ì¦ì ì¸ì¼ ìíì ëí´ì ë´ì©ì ê¸°ì íë©´ ì´ë¨ê¹ ì¶ì
-                                		(ì´ì©í ì¬ì§ìì ë¼ë¤ì¦ê° ë§ìì...ããã) -->
+                                
                                     <img src="resources/assets/img/hero/kim02.png" alt="">
                                 </div>
                             </div>
