@@ -92,7 +92,7 @@
                                     </nav>
                                 </div>
                             </div> 
-                            <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
+                            <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card" style="margin-top: 20px">
                                 <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
                                     <li class="d-none d-xl-block">
                                         <div class="form-box f-right ">
@@ -102,7 +102,7 @@
                                             </div>
                                         </div>
                                      </li>
-                                   <li class="d-none d-lg-block"> <a href="join.html" class="btn header-btn">Sign up</a></li>
+                                   <li class="d-none d-lg-block"><a href="join.html" class="btn header-btn" style="border-radius: 50px;">Sign up</a></li>
                                 </ul>
                             </div>
                             <!-- Mobile Menu -->
@@ -152,7 +152,7 @@
 				</div>
 				<div class="col-lg-6 wrapper">
 					<div class="login_form_inner register_form_inner">
-						<form class="row join_form" method="post" id="join_form" >
+						<form class="row join_form" method="post" id="join_form"  style="margin-right: 10px">
 						<div class="wrap">
 						<h3>Create an account</h3>
 						</div>
@@ -225,7 +225,7 @@
 										<input type="text" class="form-control address_input_1" id="address" name="memberAddr1" readonly="readonly" placeholder="주소" onfocus="this.placeholder = ''" onblur="this.placeholder = '주소'">
 								
 									<!-- 주소찾기 부분 -->
-									<div class="address_button" onclick="address()">
+									<div class="address_button" onclick="address()" style="margin-right: 0">
 										<span>주소 찾기</span>
 									</div>
 									<div class="clearfix"></div>
