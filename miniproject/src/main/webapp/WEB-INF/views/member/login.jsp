@@ -1,13 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    
 <!DOCTYPE html>
 <html>
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>로그인</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous"></script>
 	<!-- 이미지 불러오기 -->
 	<link rel="manifest" href="site.webmanifest">
 	
@@ -54,7 +57,7 @@
                                 </div>
                                 <div class="header-info-right">
                                    <ul>                                          
-                                       <li><a href="login.html">My Account </a></li>
+                                       <li><a href="/member/login">My Account </a></li>
                                        
                                    </ul>
                                 </div>
@@ -142,36 +145,51 @@
 						<div class="hover">
 							<h4>New to our website?</h4>
 							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-							<a class="button button-account" href="register.html">Create an Account</a>
+							<a class="button button-account" href="/member/join">Create an Account</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="login_form_inner">
 						<h3>Log in to enter</h3>
-						<!-- 로그인 폼 class name : login_wrap -->
-						<form class="row login_form login_wrap" action="#/" id="contactForm" >
-							<!-- id wrap class name : id_wrap -->
-							<div class="col-md-12 form-group id_wrap">
-													<!-- 아이디 class name :  id_input_box -->
-								<input type="text" class="form-control id_input_box" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
-							</div>
-							<!-- 비밀번호 wrap class name : pw_wrap -->
-							<div class="col-md-12 form-group pw_wrap">
-													<!-- 비밀번호 class name :  id_input_box -->
-								<input type="text" class="form-control pw_input_box" id="name" name="name" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
-							</div>
+						<!-- form id / method  : login_form / post -->
+						<form class="row login_form" id="login_form" method="post">					
+							<!-- 전체 로그인 부분 묶기 .login_wrap -->
+							<div class="login_wrap">
+								<!-- 아이디 묶기 .id_wrap -->
+								<div class="col-md-12 form-group id_wrap">
+									<!-- 아이디 항목 묶기 .id_input_box -->
+									<div class="id_input_box">
+										<!-- 아이디 .id_input / name="memberId" -->
+										<input type="text" class="form-control id_input" name="memberId" placeholder="Username" onfocus="this.placeholder = '아이디'" onblur="this.placeholder = '아이디'">							
+									</div>
+								</div>
+								
+								<!-- 비밀번호 묶기 .pw_wrap -->
+								<div class="col-md-12 form-group pw_wrap">
+									<!-- 비밀번호 항목 묶기 .pw_input_box -->
+									<div class="pw_input_box">
+										<!--  비밀번호 .pw_input / name="memberPw" -->
+										<input type="password" class="form-control pw_input" name="memberPw" placeholder="비밀번호" onfocus="this.placeholder = '비밀번호'" onblur="this.placeholder = '비밀번호'">								
+									</div>
+									<!-- 로그인 실패 시 경고글 뜨는 css 추가되어있습니다. -->
+										<c:if test="${result == 0 }">
+											<div class="login_warn" style="margin-top:30px; text-align:center; color:red;">사용자 ID 또는 비밀번호를 잘못 입력하셨습니다.</div>
+										</c:if>
+								</div>
+								
+							
 							<div class="col-md-12 form-group">
 								<div class="creat_account">
 									<input type="checkbox" id="f-option2" name="selector">
 									<label for="f-option2">Keep me logged in</label>
 								</div>
 							</div>
-										<!--  로그인 버튼 wrap class name :  login_button_wrap  -->	
-							<div class="col-md-12 form-group login_button_wrap">
-																		<!-- 로그인 버튼 class name :  id_input_box -->
-								<button type="submit" value="submit" class="button button-login w-100 login_button">Log In</button>
-								<a href="#">Forgot Password?</a>
+								<!-- 로그인버튼 묶기 .login_button_wrap -->
+								<div class="col-md-12 form-group login_button_wrap">
+									<input type="button" class="button button-login w-100 login_button" value="로그인">
+									<a href="#">Forgot Password?</a>
+								</div>
 							</div>
 						</form>
 					</div>
@@ -272,42 +290,49 @@
 	
 	<!-- JS here -->
 
-    <!-- All JS Custom Plugins Link Here here -->
-    <script src="<c:url value="/resources/assets/js/vendor/modernizr-3.5.0.min.js"/>">
-    
-    <!-- Jquery, Popper, Bootstrap -->
-    
-    <script src="<c:url value="/resources/assets/js/vendor/jquery-1.12.4.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/popper.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/bootstrap.min.js"/>">
-    <!-- Jquery Mobile Menu -->
-    <script src="<c:url value="/resources/assets/js/jquery.slicknav.min.js"/>">
-
-    <!-- Jquery Slick , Owl-Carousel Plugins -->
-    <script src="<c:url value="/resources/assets/js/owl.carousel.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/slick.min.js"/>">
-
-    <!-- One Page, Animated-HeadLin -->
-    <script src="<c:url value="/resources/assets/js/wow.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/animated.headline.js"/>">
-    
-    <!-- Scrollup, nice-select, sticky -->
-    <script src="<c:url value="/resources/assets/js/jquery.scrollUp.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/jquery.nice-select.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/jquery.sticky.js"/>">
-    <script src="<c:url value="/resources/assets/js/jquery.magnific-popup.js"/>">
-
-    <!-- contact js -->
-    
-    <script src="<c:url value="/resources/assets/js/contact.js"/>">
-    <script src="<c:url value="/resources/assets/js/jquery.form.js"/>">
-    <script src="<c:url value="/resources/assets/js/jquery.validate.min.js"/>">
-    <script src="<c:url value="/resources/assets/js/mail-script.js"/>">
-    <script src="<c:url value="/resources/assets/js/jquery.ajaxchimp.min.js"/>">
-    
-    <!-- Jquery Plugins, main Jquery -->	
-    <script src="<c:url value="/resources/assets/js/plugins.js"/>">
-    <script src="<c:url value="/resources/assets/js/main.js"/>">
+	<script>
+			/* 로그인 버튼 클릭 메서드 */
+			$(".login_button").click(function() {
 	
+				/* 로그인 메서드 서버 요청 */
+				$("#login_form").attr("action", "/member/login.do");
+				$("#login_form").submit();
+	
+			});
+		</script>
+	
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="resources/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="resources/assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="resources/assets/js/popper.min.js"></script>
+        <script src="resources/assets/js/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="resources/assets/js/jquery.slicknav.min.js"></script>
+
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="resources/assets/js/owl.carousel.min.js"></script>
+        <script src="resources/assets/js/slick.min.js"></script>
+
+		<!-- One Page, Animated-HeadLin -->
+        <script src="resources/assets/js/wow.min.js"></script>
+		<script src="resources/assets/js/animated.headline.js"></script>
+        <script src="resources/assets/js/jquery.magnific-popup.js"></script>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="resources/assets/js/jquery.scrollUp.min.js"></script>
+        <script src="resources/assets/js/jquery.nice-select.min.js"></script>
+		<script src="resources/assets/js/jquery.sticky.js"></script>
+        
+        <!-- contact js -->
+        <script src="resources/assets/js/contact.js"></script>
+        <script src="resources/assets/js/jquery.form.js"></script>
+        <script src="resources/assets/js/jquery.validate.min.js"></script>
+        <script src="resources/assets/js/mail-script.js"></script>
+        <script src="resources/assets/js/jquery.ajaxchimp.min.js"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="resources/assets/js/plugins.js"></script>
+        <script src="resources/assets/js/main.js"></script>
 </body>
 </html>
