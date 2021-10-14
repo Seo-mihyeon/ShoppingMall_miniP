@@ -257,7 +257,7 @@ p {
 
 /* line 56, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_common.scss */
 .f-right {
-  float: right;
+  float: ;
 }
 
 /* line 59, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_common.scss */
@@ -3638,7 +3638,7 @@ input:focus {
 /* line 169, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_headerMenu.scss */
 .header-bottom .header-right .form-box {
   position: relative;
-  width: 85%;
+  width: 200%;
 }
 
 /* line 172, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_headerMenu.scss */
@@ -13035,35 +13035,36 @@ input:focus {
 .wrap{width:500px;margin:auto}
 .subjecet{width:100%;height:120px;background-color:#8ec0e4}
 .subjecet span{margin-left:31px;font-size:80px;font-weight:900;color:#fff}
-.id_wrap{width:100%;margin-top:20px}.id_name{font-size:25px;font-weight:700}
-.id_input_box{border:1px solid #000;height:40px;padding:10px 14px}
+.id_wrap{width:100%;margin-top:20px}
+.id_name{font-size:20px;font-weight:700}
+.id_input_box{border:1px solid #000;height:40px;padding:6px 12px}
 .id_input{width:100%;height:100%;border:none;font-size:17px}
 .pw_wrap{width:100%;margin-top:20px}
-.pw_name{font-size:25px;font-weight:700}
+.pw_name{font-size:20px;font-weight:700}
 .pw_input_box{border:1px solid #000;height:40px;padding:10px 14px}
 .pw_input{width:100%;height:100%;border:none;font-size:17px}
 .pwck_wrap{width:100%;margin-top:20px}
-.pwck_name{font-size:25px;font-weight:700}
+.pwck_name{font-size:20px;font-weight:700}
 .pwck_input_box{border:1px solid #000;height:40px;padding:10px 14px}
 .pwck_input{width:100%;height:100%;border:none;font-size:17px}
 .user_wrap{width:100%;margin-top:20px}
-.user_name{font-size:25px;font-weight:700}
+.user_name{font-size:20px;font-weight:700}
 .user_input_box{border:1px solid #000;height:40px;padding:10px 14px}
 .user_input{width:100%;height:100%;border:none;font-size:17px}
-.phone_wrap{width:100%;margin-top:20px
-}.phone_name{font-size:25px;font-weight:700}
+.phone_wrap{width:100%;margin-top:20px}
+.phone_name{font-size:20px;font-weight:700}
 .phone_input_box{border:1px solid #000;height:40px;padding:10px 14px}
 .phone_input{width:100%;height:100%;border:none;font-size:17px}
 .mail_wrap{width:100%;margin-top:20px}
-.mail_name{font-size:25px;font-weight:700}
+.mail_name{font-size:20px;font-weight:700}
 .mail_input_box{border:1px solid #000;height:40px;padding:10px 14px}
 .mail_input{width:100%;height:100%;border:none;font-size:17px}
 .birth_wrap{width:100%;margin-top:20px}
-.birth_name{font-size:25px;font-weight:700}
+.birth_name{font-size:20px;font-weight:700}
 .birth_input_box{border:1px solid #000;height:40px;padding:10px 14px}
 .birth_input{width:100%;height:100%;border:none;font-size:17px}
 .address_wrap{width:100%;margin-top:20px}
-.address_name{font-size:25px;font-weight:700}
+.address_name{font-size:20px;font-weight:700}
 .address_input_1_box{border:1px solid #000;height:31px;padding:10px 14px;width:61%;float:left}
 .address_input_1{width:100%;height:100%;border:none;font-size:17px}
 .address_button{border:1px solid #000;height:28px;width:30%;float:right;line-height:30px;text-align:center;font-size:20px;font-weight:800;background-color:#ececf7;cursor:pointer}
@@ -13137,9 +13138,9 @@ input:focus {
 	display: none;
 }
 
-.boun {
-	float: left;	
-}	
+.login_box_img {
+	height: 100%
+}
 
 /*# sourceMappingURL=style.css.map */
 

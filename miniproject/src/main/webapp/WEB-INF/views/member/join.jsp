@@ -9,14 +9,14 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>회원가입</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-	<script src="https://code.jquery.com/jquery-3.4.1.js"
-	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-	crossorigin="anonymous"></script>
     <!-- CSS here -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/join/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/join/assets/css/owl.carousel.min.css">
@@ -72,7 +72,7 @@
                             <!-- Logo -->
                             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
                                 <div class="logo">
-                                  <a href="/main"><img src="${pageContext.request.contextPath}/resources/assets/img/logo/logo.png" alt=""></a>
+                                  <a href="index.html"><img src="${pageContext.request.contextPath}/resources/assets/img/logo/logo.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
@@ -150,21 +150,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 wrapper">
 					<div class="login_form_inner register_form_inner">
-						<!-- <h3>Create an account</h3>  -->
 						<form class="row join_form" method="post" id="join_form" >
-							<div class="wrap">
-									<span>회원가입</span>
-							<!-- wrap의 div가 밑 쪽으로 내려가지지가 않아요, 밑으로 내리면 인식을 못해요
-							div class="login_form_inner register_form_inner"얘껄로
-							인식하네요 계속, 그래서 일단 여기에  두었어요 -->
-							</div>
+						<div class="wrap">
+						<h3>Create an account</h3>
+						</div>
 						
 						<!-- 아이디 -->
 							<div class="col-md-12 form-group id_wrap">
-								<div class="id_name">아이디</div>
-								<div class="id_input_box">
+								<div class="id_name">
 									<input class="form-control id_input" id="id" name="memberId" placeholder="아이디" onfocus="this.placeholder = '아이디'" onblur="this.placeholder = '아이디'">
 								</div>
 								
@@ -175,8 +170,7 @@
 							
 						<!-- 비밀번호 -->
 							<div class="col-md-12 form-group pw_wrap">
-								<div calss="pw_name">비밀번호</div>
-								<div class="pw_input_box">
+								<div calss="pw_name">
 									<input type="password" class="form-control pw_input" id="password" name="memberPw" placeholder="비밀번호" onfocus="this.placeholder = '비밀번호'" onblur="this.placeholder = '비밀번호'">
 								</div>
 					            <span class="final_pw_ck">비밀번호를 입력해주세요.</span>
@@ -186,16 +180,14 @@
 				            
 						<!-- 비밀번호 확인 -->
 				              <div class="col-md-12 form-group pwck_wrap">
-				              	<div class="pwck_name">비밀번호 확인</div>
-				              	<div class="pwck_input_box">
+				              	<div class="pwck_name">
 									<input type="password" class="form-control pwck_input" placeholder="비밀번호 확인" onfocus="this.placeholder = '비밀번호 확인'" onblur="this.placeholder = '비밀번호 확인'">
 				              	</div>				              
 					              <span class="final_pwck_ck">비밀번호 확인을 입력해주세요.</span>
 				              </div>
 						<!-- 이름 -->				              
               				<div class="col-md-12 form-group user_wrap">
-              					<div class="user_name">이름</div>
-              					<div class="user_input_box">
+              					<div class="user_name">
 									<input type="text" class="form-control user_input" id="name" name="memberName" placeholder="사용자 이름" onfocus="this.placeholder = '사용자 이름'" onblur="this.placeholder = '사용자 이름'">
               					</div>
 								<span class="final_name_ck">이름을 입력해주세요.</span>
@@ -203,8 +195,7 @@
 							
 						<!-- 연락처 -->				              
               				<div class="col-md-12 form-group phone_wrap">
-              					<div class="phone_name">연락처</div>
-              					<div class="phone_input_box">
+              					<div class="phone_name">
 									<input type="text" class="form-control phone_input" id="phonenumber" name="memberPhone" placeholder="연락처" onfocus="this.placeholder = ''" onblur="this.placeholder = '연락처'">
               					</div>
 								<span class="final_phone_ck">연락처를 입력해주세요.</span>
@@ -212,8 +203,7 @@
 								
 						<!-- 이메일 -->
 							<div class="col-md-12 form-group mail_wrap">
-								<div class="mail_name">이메일</div>
-								<div class="mail_input_box">
+								<div class="mail_name">
 									<input type="text" class="form-control mail_input" id="email" name="memberMail" placeholder="이메일" onfocus="this.placeholder = ''" onblur="this.placeholder = '이메일'">
 								</div>
 								<span class="final_mail_ck">이메일을 입력해주세요.</span>
@@ -221,8 +211,7 @@
 							
 						<!-- 생년월일 -->
 							<div class="col-md-12 form-group birth_wrap">
-								<div class="birth_name">생년월일</div>
-								<div class="birth_input_box">
+								<div class="birth_name">
 									<input type="text" class="form-control birth_input" id="birth" name="memberBirth" placeholder="생년월일" onfocus="this.placeholder = ''" onblur="this.placeholder = '생년월일'">
 								</div>
 								<span class="final_birth_ck">생년월일을 입력해주세요.</span>
@@ -230,12 +219,10 @@
 							
 						<!-- 주소 -->
 							<div class="col-md-12 form-group address_wrap">
-								<div class="address_name">주소</div>
+								<div class="address_name"></div>
 								<!-- 첫번째 주소 칸 -->
 								<div class="address_input_1_wrap">
-									<div class="address_input_1_box">
-										<input type="text" class="form-control address_input_1" id="address" name="memberAddr1" readonly="readonly">
-									</div>
+										<input type="text" class="form-control address_input_1" id="address" name="memberAddr1" readonly="readonly" placeholder="주소" onfocus="this.placeholder = ''" onblur="this.placeholder = '주소'">
 								
 									<!-- 주소찾기 부분 -->
 									<div class="address_button" onclick="address()">
@@ -246,31 +233,24 @@
 								
 								<!-- 두번째 주소 칸 -->
 								<div class="address_input_2_wrap">
-									<div class="address_input_2_box">
 										<input type="text" class="form-control address_input_2" id="address" name="memberAddr2" readonly="readonly">
-									</div>
 								</div>
 								
 								<!-- 세번째 주소 칸 -->
 								<div class="address_input_3_wrap">
-									<div class="address_input_3_box">
 										<input type="text" class="form-control address_input_3" id="address" name="memberAddr3" readonly="readonly">
 									</div>
 								</div>
 									<span class="final_addr_ck">주소를 입력해주세요.</span>
+									
+								<div class="col-md-12 join_button_wrap">
+									<input type="button" class="button button-login w-100 join_button" value="Register">
+								</div>
+								
 								</div>
 								
 							</div>
 							
-							<div class="col-md-12 form-group">
-								<div class="creat_account">
-									<input type="checkbox" id="f-option2" name="selector">
-									<label for="f-option2">Keep me logged in</label>
-								</div>
-							</div>
-							<div class="col-md-12 join_button_wrap">
-								<input type="button" class="button button-login w-100 join_button" value="회원가입">
-							</div>
 						</form>
 					</div>
 				</div>
@@ -280,7 +260,8 @@
 	<!--================End Login Box Area =================-->
 
 <!-- 회원가입 변수 관련 항목 사항 -->
-<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script
+		src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 	<script>
 		var idCheck = false; // 아이디
 		var idckCheck = false; // 아이디 중복 검사
