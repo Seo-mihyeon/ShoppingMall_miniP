@@ -13067,7 +13067,7 @@ input:focus {
 .address_name{font-size:20px;font-weight:700}
 .address_input_1_box{border:1px solid #000;height:31px;padding:10px 14px;width:61%;float:left}
 .address_input_1{width:100%;height:100%;border:none;font-size:17px}
-.address_button{border:1px solid #000;height:28px;width:30%;float:right;line-height:30px;text-align:center;font-size:20px;font-weight:800;background-color:#ececf7;cursor:pointer}
+.address_button{margin-right:20px; border:1px solid #000;height:28px;width:30%;float:right;line-height:30px;text-align:center;font-size:20px;font-weight:800;background-color:#ececf7;cursor:pointer}
 .address_input_2_wrap{margin-top:20px}
 .address_input_2_box{border:1px solid #000;height:31px;padding:10px 14px}
 .address_input_2{width:100%;height:100%;border:none;font-size:17px}
