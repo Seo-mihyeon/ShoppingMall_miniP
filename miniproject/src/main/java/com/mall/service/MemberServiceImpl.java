@@ -31,16 +31,11 @@ public class MemberServiceImpl implements MemberService {
 	public MemberVO memberLogin(MemberVO member) throws Exception {
 		return memberMapper.memberLogin(member);
 	}
-<<<<<<< HEAD
 
 	// 로그인
 	@Override
 	public MemberVO memberLogin(MemberVO member) throws Exception {
 		return memberMapper.memberLogin(member);
 	}
-	
-	
-=======
->>>>>>> hyerim
 
 }
