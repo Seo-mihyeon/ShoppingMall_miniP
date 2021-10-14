@@ -1,5 +1,9 @@
-<!doctype html>
-<html class="no-js" lang="ko">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    
+<!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -52,9 +56,31 @@
                                     <div class="select-this">
                                     </div>
                                 </div>
-                                <div class="header-info-right">
-                                   <ul>                                          
-                                       <li><a href="member/login">My Account </a></li>
+                                <!-- 
+                                	로그인 X : 로그인 / 회원가입 버튼 보여주기
+                                	로그인 O : 1) 일반 회원 : 마이페이지 / 로그아웃
+                                			 2) 관리자 : 관리자 페이지 / 로그아웃
+                                 -->
+                                <!-- 로그인 여부에 따라 상단메뉴 부분 변경 사항 반영하기  -->
+                                <div class="header-info-rights login_area">
+                                   <ul class="list">                                 
+                                   		<!-- 로그인 하지 않은 상태 (로그인 / 회원가입 버튼 보여주며 링크 제공) -->
+                                   		<c:if test="${member == null }">
+                                      		<li><a href="/member/login">(로그인)</a></li>
+                                      		<li><a href="/member/join">(회원가입)</a></li>
+                						</c:if>
+                						
+                						<!-- 로그인한 상태  (내정보보기 / 로그아웃 버튼 보여주며 링크 제공) -->
+                						<c:if test="${ member != null }">
+                							<!-- 관리자 계정 확인  / 관리자 페이지 보여주기-->
+                							<c:if test="${member.adminCk == 1 }">
+                								<li><a href="/admin/main">관리자 페이지 </a></li>
+                							</c:if>
+                								<!-- 회원인경우 마이페이지 항목 보여주기 / 우선 보류-->
+                								<li><a href="/member/mypage">마이페이지</a></li>
+                                      				<!-- post방식의 로그아웃 처리 기능 -->
+                                      			<li><a id="gnb_logout_button">로그아웃</a></li>
+                						</c:if>
                                    </ul>
                                 </div>
                             </div>
@@ -67,7 +93,7 @@
                             <!-- Logo -->
                             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
                                 <div class="logo">
-                                  <a href="index.html"><img src="resources/assets/img/logo/logo.png" alt=""></a>
+                                  <a href="/main"><img src="resources/assets/img/logo/logo.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-7 col-sm-5">
@@ -75,7 +101,7 @@
                                 <div class="main-menu f-right d-none d-lg-block">
                                     <nav>                                                
                                         <ul id="navigation">                                                                                                                                     
-                                            <li><a href="main.jsp">Home</a></li>
+                                            <li><a href="/main">Home</a></li>
                                             <li><a href="Catagori.html">Catagori</a></li>
                                             <li class="hot"><a href="#">Latest</a>
                                                 <ul class="submenu">
@@ -266,11 +292,10 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">ìí°ë±í¬ ìì´ ì ¤</a></h4>
+                                        <h4><a href="#">워터뱅크 아이 젤</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -289,11 +314,10 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">í¼í ìë ì  ì§ì  ë³´ìµ í¬ë¦¼</a></h4>
+                                        <h4><a href="#">피토알렉신 진정 보습 크림</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -315,11 +339,10 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">í¬ë¦¼ ì¤í¨</a></h4>
+                                        <h4><a href="#">크림 스킨</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -338,11 +361,10 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">í¬ë¦¼ ì¤í¨ ì´ë¯ ì¬ì¸ì</a></h4>
+                                        <h4><a href="#">크림 스킨 옴므 올인원</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -361,11 +383,10 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">ìí°ë±í¬ íì´ëë¡ í¬ë¦¼ EX</a></h4>
+                                        <h4><a href="#">워터뱅크 하이드로 크림 EX<</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -387,11 +408,10 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">í¼íí¸ ë¦¬ë´ ì ì¤ ë¦¬ì ëë ì´í ìì´ í¬ë¦¼</a></h4>
+                                        <h4><a href="#">퍼펙트 리뉴 유스 리제너레이팅 아이 크림</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -418,11 +438,10 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">í¼íí¸ ë¦¬ë´ ì ì¤ ë¦¬ì ëë ì´í ìì´ í¬ë¦¼</a></h4>
+                                        <h4><a href="#">퍼펙트 리뉴 유스 리제너레이팅 아이 크림</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -444,11 +463,10 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">ë¼ë¤ì¦-í¬ë¦¼ ì¤í¨</a></h4>
+                                        <h4><a href="#">크림 스킨</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -470,11 +488,10 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">ìí°ë±í¬ ìì´ ì ¤</a></h4>
+                                        <h4><a href="#">워터뱅크 아이 젤</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -493,11 +510,10 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">ì´ì±ì´ 77% í ë</a></h4>
+                                        <h4><a href="#">어성초 77% 토너</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -516,11 +532,10 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">ìºë¦¬ì¤í¼ í¬ì¸ë¼ì¹´ í ë</a></h4>
+                                        <h4><a href="#">캐리오피 포츌라카 토너</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -542,11 +557,10 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">ë¸ë§ê·¸ë¦° í°í¸ë¦¬ ìì¹´ ìë© í ë</a></h4>
+                                        <h4><a href="#">브링그린 티트리 시카 수딩 토너</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -953,6 +967,24 @@
    </footer>
    
 	<!-- JS here -->
+	
+	
+	<script>
+		/* gnb_area 로그아웃 버튼 작동 */
+		$("#gnb_logout_button").click(function() {
+			//alert("버튼 작동");
+	        $.ajax({
+	            type:"POST",
+	            url:"/member/logout.do",
+	            success:function(data){
+	                alert("로그아웃 성공");
+	                document.location.reload();     
+	            } 
+	        }); // ajax 
+		});
+		
+	</script>
+	
 	
 		<!-- All JS Custom Plugins Link Here here -->
         <script src="resources/assets/js/vendor/modernizr-3.5.0.min.js"></script>
