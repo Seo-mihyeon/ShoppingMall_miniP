@@ -12,7 +12,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="resources/assets/img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="resources/assets/img/skincare.ico">
 
 		<!-- CSS here -->
             <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/bootstrap.min.css">
@@ -36,7 +36,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                	<!-- ë¡ê³  ì´ë¯¸ì§ ë¶ë¶ -->
+                	<!-- 상단 로고 부분 -->
                     <img src="resources/assets/img/logo/logo.png" alt="">
                 </div>
             </div>
@@ -69,18 +69,17 @@
                                       		<li><a href="/member/login">(로그인)</a></li>
                                       		<li><a href="/member/join">(회원가입)</a></li>
                 						</c:if>
-                						
                 						<!-- 로그인한 상태  (내정보보기 / 로그아웃 버튼 보여주며 링크 제공) -->
                 						<c:if test="${ member != null }">
                 							<!-- 관리자 계정 확인  / 관리자 페이지 보여주기-->
                 							<c:if test="${member.adminCk == 1 }">
                 								<li><a href="/admin/main">관리자 페이지 </a></li>
                 							</c:if>
-                								<!-- 회원인경우 마이페이지 항목 보여주기 / 우선 보류--> 
+                								<!-- 회원인경우 마이페이지 항목 보여주기 / 우선 보류-->
                 								<li><a href="/member/mypage">마이페이지</a></li>
-												<!-- get방식의 로그아웃 처리 기능입니다 -->
-												<a href="/member/logout.do">로그아웃</a>                						
-											</c:if>
+                                      				<!-- post방식의 로그아웃 처리 기능 -->
+                                      			<li><a id="gnb_logout_button">로그아웃</a></li>
+                						</c:if>
                                    </ul>
                                 </div>
                             </div>
@@ -149,14 +148,13 @@
                         <div class="row d-flex align-items-center justify-content-between">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block">
                                 <div class="hero__img" data-animation="bounceIn" data-delay=".4s">
-                                
                                     <img src="resources/assets/img/hero/kim02.png" alt="">
                                 </div>
                             </div>
                             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8">
                                 <div class="hero__caption">
                                     <span data-animation="fadeInRight" data-delay=".4s">60% Discount</span>
-                                    <h1 data-animation="fadeInRight" data-delay=".6s">유정이도<br>라네즈 크림 스킨</h1>
+                                    <h1 data-animation="fadeInRight" data-delay=".6s">유정이도<br>라네즈<br> 크림 스킨</h1>
                                     <p data-animation="fadeInRight" data-delay=".8s">꿀 피부 예약 완료!</p>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn" data-animation="fadeInRight" data-delay="1s">
@@ -359,7 +357,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">크림 스킨 옴므 올인원</a></h4>
+                                        <h4><a href="#">크림 스킨 옴므 올인원</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -381,7 +379,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">워터뱅크 하이드로 크림 EX<</a></h4>
+                                        <h4><a href="#">워터뱅크 하이드로 크림 EX</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
@@ -508,7 +506,7 @@
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
-                                        <h4><a href="#">어성초 77% 토너</a></h4>
+                                        <h4><a href="#">어성초 77% 토너</a></h4>
                                         <div class="price">
                                             <ul>
                                                 <li>$40.00</li>
