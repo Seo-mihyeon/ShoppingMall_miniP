@@ -191,7 +191,7 @@
 
 	/* 상품소개 */
 	ClassicEditor
-		.create(document.querySelector('#itemInfo_textarea'))
+		.create(document.querySelector('#itemInfo_textarea'), config)
 		.catch(error=>{
 			console.error(error);
 		});
