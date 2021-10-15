@@ -21,7 +21,7 @@
 
 	<%@include file="../includes/admin/header.jsp"%>
 
-	<div class="admin_content_wrap">
+	<div class="admin_content_wrap" style="margin-top: 15px; margin-left: 230px;">
 		<div class="admin_content_subject">
 			<span>상품 등록</span>
 		</div>
