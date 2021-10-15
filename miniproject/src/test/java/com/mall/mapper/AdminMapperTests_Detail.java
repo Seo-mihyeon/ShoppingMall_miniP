@@ -18,7 +18,7 @@ public class AdminMapperTests_Detail {
 	@Test
 	public void goodsGetDetailTest() {
 		
-		int itemid = 23;
+		int itemid = 24;
 		
 		ItemVO result = mapper.goodsGetDetail(itemid);
 		

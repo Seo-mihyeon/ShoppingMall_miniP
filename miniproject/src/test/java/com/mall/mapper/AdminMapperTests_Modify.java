@@ -20,7 +20,7 @@ public class AdminMapperTests_Modify {
 	public void goodsModifyTest() {
 		ItemVO vo = new ItemVO();
 		
-		vo.setItemId(23);
+		vo.setItemId(24);
 		vo.setItemCode("3");
 		vo.setItemName("립밤");
 		vo.setItemPrice(30000);

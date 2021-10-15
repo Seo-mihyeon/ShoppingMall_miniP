@@ -15,15 +15,27 @@ public class AdminMapperTests {
 	@Autowired
 	private AdminMapper mapper;
 	
-	@Test
-	public void goodsEnrollTest() throws Exception{
-		ItemVO item = new ItemVO();
-		
-		item.setItemCode("1");
-		item.setItemName("토너");
-		item.setItemPrice(10000);
-		item.setItemInfo("토너입니다");
-		
+//	@Test
+//	public void goodsEnrollTest() throws Exception{
+//		ItemVO item = new ItemVO();
+//		
+//		item.setItemCode("1");
+//		item.setItemName("토너");
+//		item.setItemPrice(10000);
+//		item.setItemInfo("토너입니다");
+//		
 //		mapper.goodsEnroll(item);
+//	}
+	
+	@Test
+	public void goodDeleteTest() {
+		
+		int itemId = 24;
+		
+		int result = mapper.goodsDelete(itemId);
+		
+		if(result == 1) {
+			System.out.println("삭제 성공");
+		}
 	}
 }
