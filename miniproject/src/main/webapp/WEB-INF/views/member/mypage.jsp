@@ -152,7 +152,7 @@
 					</div>
 				</div>
 				-->
-					<form id="mypage" action="/member/mypage" method="post">
+					<form id="mypage" form class="row join_form" action="/member/mypage" method="post">
 					<div class="login_form_inner register_form_inner" style="width: 1100px">
 					<!-- 
 						<div class="wrap">

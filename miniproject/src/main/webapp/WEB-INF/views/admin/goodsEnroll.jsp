@@ -52,8 +52,7 @@
 <body>
    <%@include file="../includes/admin/header.jsp"%>
 
-   <div class="admin_content_wrap" style="margin-top: 15px; margin-left: 230px;">
-   <div class="slider-area">
+   <div class="admin_content_wrap col-xl-12">
         <!-- Mobile Menu -->
         <div class="single-slider slider-height2 d-flex align-items-center"
         	data-background="/join/assets/img/hero/category.jpg" style="background-image: url("join/assets/img/hero/category.jpg");">
@@ -67,13 +66,12 @@
                 </div>
             </div>
         </div>
-    </div>
     <!--  
       <div class="admin_content_subject">
          <span>상품 등록</span>
       </div>
 	-->
-      <div class="admin_content_main">
+      <div class="admin_content_main" >
          <form action="/admin/goodsEnroll" method="post" id="enrollForm">
             <div class="form_section" style="background-color: #CEECF5">
                <div class="form_section_title">

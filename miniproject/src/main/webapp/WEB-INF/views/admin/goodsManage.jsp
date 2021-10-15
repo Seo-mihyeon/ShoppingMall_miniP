@@ -8,6 +8,7 @@
 <meta charset="UTF-8">
 <title>상품관리페이지</title>
 <link rel="stylesheet" href="../resources/css/admin/goodsManage.css">
+<link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/assets/img/leaf.png">
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"
    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -18,7 +19,7 @@
 
    <%@include file="../includes/admin/header.jsp"%>
    
-    <div class="admin_content_wrap" style="margin-top: 15px; margin-left: 230px;">
+   <div class="admin_content_wrap col-xl-12">
    <div class="slider-area">
         <!-- Mobile Menu -->
         <div class="single-slider slider-height2 d-flex align-items-center"
@@ -27,7 +28,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
-                        <a href="/admin/main"><h2 style="margin-right: 150px;">Product management</h2></a>
+                        <a href="/admin/main"><h2>Product management</h2></a>
                         </div>
                     </div>
                 </div>
@@ -36,7 +37,7 @@
     </div>
                        <!-- 상품 리스트 O -->
                        <c:if test="${listcheck != 'empty'}">
-                          <table class="goods_table">
+                          <table class="goods_table ">
                              <thead >
                                 <tr >
                               <td class="th_column_1">상품 번호</td>
@@ -62,9 +63,11 @@
                              </tr>
                              </c:forEach>
                           </table>
+                          </div>
                        </c:if>
                           
                    <!-- 검색 영역 -->
+                   <div class="col-xl-12">
                    <div class="search_wrap">
                       <form id="searchForm" action="/admin/goodsManage" method="get">
                          <div class="search_input">
@@ -102,7 +105,6 @@
                              </li>
                           </c:if>
                        </ul>
-                   </div>
                    </div>
                
                    
