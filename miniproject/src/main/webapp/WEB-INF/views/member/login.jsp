@@ -176,7 +176,7 @@
 									<!-- 비밀번호 항목 묶기 .pw_input_box -->
 									<div class="pw_input_box">
 										<!--  비밀번호 .pw_input / name="memberPw" -->
-										<input type="password" class="form-control pw_input" name="memberPw" placeholder="비밀번호">								
+										<input type="password" class="form-control pw_input" name="memberPw" placeholder="Password">								
 									</div>
 									<!-- 로그인 실패 시 경고글 뜨는 css 추가되어있습니다. -->
 										<c:if test="${result == 0 }">

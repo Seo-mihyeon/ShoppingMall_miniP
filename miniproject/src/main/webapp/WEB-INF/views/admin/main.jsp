@@ -59,7 +59,8 @@
 				<ul>
 					<li><a class="admin_list_01" href="/admin/goodsEnroll">상품 등록</a></li>
 					<li><a class="admin_list_02" href="/admin/goodsManage">상품 관리</a></li>
-					<lI><a class="admin_list_03">회원 관리</a></lI>
+					<li><a class="admin_list_03" href="#">회원 관리</a></li>
+				
 				</ul>
 				<!-- 
                     <div class="admin_list_01">
@@ -67,12 +68,9 @@
                     </div>
                      -->
 			</div>
+			      <div class="admin_content_wrap"></div>
+			
 		</div>
-      
-      
-      
-      <div class="admin_content_wrap"></div>
-                
 <%@include file="../includes/admin/footer.jsp" %>
 
 </body>

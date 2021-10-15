@@ -65,10 +65,11 @@ ul {
 
 /* 관리자페이지 네비 영역 */
 .admin_navi_wrap {
-	width: 20%;
+	width: 100%;
 	height: 300px;
 	float: left;
 	height: 100%;
+
 }
 
 .admin_navi_wrap li {
@@ -99,10 +100,7 @@ ul {
 
 /* 관리자페이지 컨텐츠 영역 */
 .admin_content_wrap {
-	width: 80%;
-	float: left;
-	height: 100%;
-	height: 700px;
+	padding-bottom:200px;
 }
 
 .admin_content_wrap div {
