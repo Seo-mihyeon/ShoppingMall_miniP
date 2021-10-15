@@ -48,6 +48,7 @@ ul {
 	height: 110px;
 	line-height: 110px;
 	background-color: #5080bd;
+	margin-bottom : 15px;
 }
 
 .admin_top_wrap>span {
@@ -90,6 +91,11 @@ ul {
 .admin_list_01{
     background-color: #c8c8c8;
 } */
+
+.admin_navi_wrap li a:link {color: black;}
+.admin_navi_wrap li a:visited {color: black;}
+.admin_navi_wrap li a:active {color: black;}
+.admin_navi_wrap li a:hover {color: black;}
 
 /* 관리자페이지 컨텐츠 영역 */
 .admin_content_wrap {

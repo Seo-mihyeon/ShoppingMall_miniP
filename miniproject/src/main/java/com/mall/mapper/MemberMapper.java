@@ -13,5 +13,8 @@ public interface MemberMapper {
 	
 	// 로그인
 	public MemberVO memberLogin(MemberVO member);
+	
+	// 회원 정보 조회
+	public MemberVO readMember(String memberId) throws Exception;
 
 }

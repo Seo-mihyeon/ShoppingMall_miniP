@@ -8,6 +8,9 @@ public class Criteria {
 	// 페이지 표시 개수
 	private int amount;
 	
+	// 페이지 스킵
+	private int skip;
+	
 	// 검색 타입
 	private String type;
 	
@@ -18,6 +21,7 @@ public class Criteria {
 	public Criteria(int pageNum, int amount) {
 		this.pageNum = pageNum;
 		this.amount = amount;
+		this.skip = (pageNum-1) * amount;
 	}
 	
 	// 기본 생성자
@@ -36,6 +40,7 @@ public class Criteria {
 
 	public void setPageNum(int pageNum) {
 		this.pageNum = pageNum;
+		this.skip = (this.pageNum - 1) * this.amount;
 	}
 
 	public int getAmount() {
@@ -44,6 +49,15 @@ public class Criteria {
 
 	public void setAmount(int amount) {
 		this.amount = amount;
+		this.skip = (this.pageNum - 1) * amount;
+	}
+	
+	public int getSkip() {
+		return skip;
+	}
+
+	public void setSkip(int skip) {
+		this.skip = skip;
 	}
 
 	public String getType() {
@@ -64,7 +78,7 @@ public class Criteria {
 
 	@Override
 	public String toString() {
-		return "Criteria [pageNum=" + pageNum + ", amount=" + amount + ", type=" + type + ", keyword=" + keyword + "]";
+		return "Criteria [pageNum=" + pageNum + ", amount=" + amount + "skip=" + skip + ", type=" + type + ", keyword=" + keyword + "]";
 	}
 	
 }

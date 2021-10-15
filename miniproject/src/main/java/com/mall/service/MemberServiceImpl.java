@@ -32,4 +32,16 @@ public class MemberServiceImpl implements MemberService {
 		return memberMapper.memberLogin(member);
 	}
 
+	// 회원정보 조회
+	@Override
+	public MemberVO readMember(String memberId) throws Exception {
+		MemberVO member = null;
+		try {
+			member = memberMapper.readMember(memberId);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return member;
+	}
+
 }

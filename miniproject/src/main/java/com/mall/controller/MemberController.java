@@ -8,6 +8,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -15,6 +17,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.mall.model.MemberVO;
 import com.mall.service.MemberService;
+
+import oracle.net.aso.l;
 
 // 회원과 관련된 요청을 따로 관리하기 위한 컨트롤러 클래스
 @Controller
@@ -147,6 +151,13 @@ public class MemberController {
 		HttpSession session = request.getSession();
 		
 		session.invalidate();
+	}
+	
+	// 내 정보 보기
+	@RequestMapping(value = "/mypage")
+	public String mypage() throws Exception{
+		return "/member/mypage";
+		
 	}
 
 }

@@ -1,11 +1,5 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=origin/main
 eclipse.preferences.version=1
-<<<<<<< HEAD
-<<<<<<< HEAD
 encoding//src/main/webapp/WEB-INF/views/admin/goodsEnroll.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/views/member/join.jsp=UTF-8
-=======
-=======
-encoding//src/main/webapp/WEB-INF/views/main.jsp=UTF-8
->>>>>>> 5e80ae6b7293d0237f75a13abb0c8f762df3d158
-encoding/<project>=utf-8
->>>>>>> origin/main

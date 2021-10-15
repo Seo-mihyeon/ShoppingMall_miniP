@@ -12,4 +12,7 @@ public interface MemberService {
 
 	// 로그인
 	public MemberVO memberLogin(MemberVO member) throws Exception;
+	
+	// 회원정보 조회
+	public MemberVO readMember(String memberId) throws Exception;
 }
