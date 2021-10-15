@@ -8,14 +8,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>회원가입</title>
+    <title>Register</title>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/assets/img/leaf.png">
 
     <!-- CSS here -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/join/assets/css/bootstrap.min.css">
@@ -59,7 +59,10 @@
                                 </div>
                                 <div class="header-info-right">
                                    <ul>                                          
-                                       <li><a href="login.html">My Account </a></li>
+                                       <li><a href="login.html" style="font-size: 20px">My Account </a></li>
+                                   </ul>
+                                   <ul>                                          
+                                       <li><a href="login.html" style="font-size: 20px">Sing in </a></li>
                                    </ul>
                                 </div>
                             </div>
@@ -72,7 +75,7 @@
                             <!-- Logo -->
                             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
                                 <div class="logo">
-                                  <a href="/main"><img src="${pageContext.request.contextPath}/resources/assets/img/logo/logo.png" alt=""></a>
+                                  <a href="/main"><img src="${pageContext.request.contextPath}/resources/assets/img/logo/5logo.png" alt="로고 이미지" style="margin-top: -16px"></a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
@@ -92,7 +95,7 @@
                                     </nav>
                                 </div>
                             </div> 
-                            <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card" style="margin-top: 20px">
+                            <div class="col-xl-5 col-lg-5 col-md-3 col-sm-3 fix-card">
                                 <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
                                     <li class="d-none d-xl-block">
                                         <div class="form-box f-right ">
@@ -102,7 +105,7 @@
                                             </div>
                                         </div>
                                      </li>
-                                   <li class="d-none d-lg-block"><a href="join.html" class="btn header-btn" style="border-radius: 50px;">Sign up</a></li>
+                                     <!--  <li class="d-none d-lg-block"><a href="join.html" class="btn header-btn" style="border-radius: 80px; height: 50px;">Sign up</a></li>-->
                                 </ul>
                             </div>
                             <!-- Mobile Menu -->
@@ -135,7 +138,7 @@
     </div>
     <!-- slider Area End-->
 
-    <!--================Register Box Area =================-->
+   <!--================Register Box Area =================-->
 	<section class="login_box_area section-margin">
 		<div class="container">
 			<div class="row">
@@ -160,7 +163,7 @@
 						<!-- 아이디 -->
 							<div class="col-md-12 form-group id_wrap">
 								<div class="id_name">
-									<input class="form-control id_input" id="id" name="memberId" placeholder="아이디" onfocus="this.placeholder = '아이디'" onblur="this.placeholder = '아이디'">
+									<input class="form-control id_input" id="id" name="memberId" placeholder="Id" onfocus="this.placeholder = 'Id'" onblur="this.placeholder = 'Id'">
 								</div>
 								
 									<span class="id_input_re_1">사용 가능한 아이디입니다.</span>
@@ -171,7 +174,7 @@
 						<!-- 비밀번호 -->
 							<div class="col-md-12 form-group pw_wrap">
 								<div calss="pw_name">
-									<input type="password" class="form-control pw_input" id="password" name="memberPw" placeholder="비밀번호" onfocus="this.placeholder = '비밀번호'" onblur="this.placeholder = '비밀번호'">
+									<input type="password" class="form-control pw_input" id="password" name="memberPw" placeholder="Password" onfocus="this.placeholder = 'Password'" onblur="this.placeholder = 'Password'">
 								</div>
 					            <span class="final_pw_ck">비밀번호를 입력해주세요.</span>
 								<span class="pwck_input_re_1">비밀번호가 일치합니다.</span>
@@ -181,14 +184,14 @@
 						<!-- 비밀번호 확인 -->
 				              <div class="col-md-12 form-group pwck_wrap">
 				              	<div class="pwck_name">
-									<input type="password" class="form-control pwck_input" placeholder="비밀번호 확인" onfocus="this.placeholder = '비밀번호 확인'" onblur="this.placeholder = '비밀번호 확인'">
+									<input type="password" class="form-control pwck_input" placeholder="Password check" onfocus="this.placeholder = 'Password check'" onblur="this.placeholder = 'Password check'">
 				              	</div>				              
 					              <span class="final_pwck_ck">비밀번호 확인을 입력해주세요.</span>
 				              </div>
 						<!-- 이름 -->				              
               				<div class="col-md-12 form-group user_wrap">
               					<div class="user_name">
-									<input type="text" class="form-control user_input" id="name" name="memberName" placeholder="사용자 이름" onfocus="this.placeholder = '사용자 이름'" onblur="this.placeholder = '사용자 이름'">
+									<input type="text" class="form-control user_input" id="name" name="memberName" placeholder="UserName" onfocus="this.placeholder = 'UserName'" onblur="this.placeholder = 'UserName'">
               					</div>
 								<span class="final_name_ck">이름을 입력해주세요.</span>
 							</div>
@@ -196,7 +199,7 @@
 						<!-- 연락처 -->				              
               				<div class="col-md-12 form-group phone_wrap">
               					<div class="phone_name">
-									<input type="text" class="form-control phone_input" id="phonenumber" name="memberPhone" placeholder="연락처" onfocus="this.placeholder = ''" onblur="this.placeholder = '연락처'">
+									<input type="text" class="form-control phone_input" id="phonenumber" name="memberPhone" placeholder="PhoneNumber" onfocus="this.placeholder = 'PhoneNumber'" onblur="this.placeholder = 'PhoneNumber'">
               					</div>
 								<span class="final_phone_ck">연락처를 입력해주세요.</span>
 							</div>
@@ -204,7 +207,7 @@
 						<!-- 이메일 -->
 							<div class="col-md-12 form-group mail_wrap">
 								<div class="mail_name">
-									<input type="text" class="form-control mail_input" id="email" name="memberMail" placeholder="이메일" onfocus="this.placeholder = ''" onblur="this.placeholder = '이메일'">
+									<input type="text" class="form-control mail_input" id="email" name="memberMail" placeholder="E-mail" onfocus="this.placeholder = 'E-mail'" onblur="this.placeholder = 'E-mail'">
 								</div>
 								<span class="final_mail_ck">이메일을 입력해주세요.</span>
 							</div>
@@ -212,7 +215,7 @@
 						<!-- 생년월일 -->
 							<div class="col-md-12 form-group birth_wrap">
 								<div class="birth_name">
-									<input type="text" class="form-control birth_input" id="birth" name="memberBirth" placeholder="생년월일" onfocus="this.placeholder = ''" onblur="this.placeholder = '생년월일'">
+									<input type="text" class="form-control birth_input" id="birth" name="memberBirth" placeholder="Birth" onfocus="this.placeholder = 'Birth'" onblur="this.placeholder = 'Birth'">
 								</div>
 								<span class="final_birth_ck">생년월일을 입력해주세요.</span>
 							</div>
@@ -222,11 +225,11 @@
 								<div class="address_name"></div>
 								<!-- 첫번째 주소 칸 -->
 								<div class="address_input_1_wrap">
-										<input type="text" class="form-control address_input_1" id="address" name="memberAddr1" readonly="readonly" placeholder="주소" onfocus="this.placeholder = ''" onblur="this.placeholder = '주소'">
+										<input type="text" class="form-control address_input_1" id="address" name="memberAddr1" readonly="readonly" placeholder="Address" onfocus="this.placeholder = 'Address'" onblur="this.placeholder = 'Address'">
 								
 									<!-- 주소찾기 부분 -->
 									<div class="address_button" onclick="address()" style="margin-right: 0">
-										<span>주소 찾기</span>
+										<span>Adress Find</span>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -259,9 +262,7 @@
 	</section>
 	<!--================End Login Box Area =================-->
 	
-	 
-        
-        <footer>
+	<footer>
         <!-- Footer Start-->
         <div class="footer-area footer-padding2">
             <div class="container">
@@ -347,8 +348,6 @@
     
         <!-- Footer End-->
     </footer>
-    
-        <!-- Footer End-->
 
 <!-- 회원가입 변수 관련 항목 사항 -->
 <script
@@ -594,7 +593,10 @@
 					}
 				});
 	</script>
+
     
+        <!-- Footer End-->
+    </footer>
 <!-- JS here -->
 
     <!-- All JS Custom Plugins Link Here here -->

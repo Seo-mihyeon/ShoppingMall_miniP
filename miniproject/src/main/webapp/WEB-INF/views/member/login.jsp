@@ -7,7 +7,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>로그인</title>
+  <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/assets/img/leaf.png">
+  <title>Login</title>
   <script src="https://code.jquery.com/jquery-3.4.1.js"
 	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 	crossorigin="anonymous"></script>
@@ -57,7 +58,11 @@
                                 </div>
                                 <div class="header-info-right">
                                    <ul>                                          
-                                       <li><a href="/member/login">My Account </a></li>
+                                       <li><a href="login.html" style="font-size: 20px">My Account </a></li>
+                                       
+                                   </ul>
+                                   <ul>                                          
+                                       <li><a href="join.html" style="font-size: 20px">Sign up </a></li>
                                        
                                    </ul>
                                 </div>
@@ -71,7 +76,7 @@
                             <!-- Logo -->
                             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
                                 <div class="logo">
-                                  <a href="/main"><img src="${pageContext.request.contextPath}/resources/assets/img/logo/logo.png" alt=""></a>
+                                  <a href="/main"><img src="${pageContext.request.contextPath}/resources/assets/img/logo/5logo.png" alt="로고 이미지" style="margin-top: -16px"></a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
@@ -102,8 +107,9 @@
                                             </div>
                                         </div>
                                      </li>
-                                   
+                                   <!--  
                                    <li class="d-none d-lg-block"> <a href="login.jsp" class="btn header-btn">Sign in</a></li>
+                                   -->
                                 </ul>
                             </div>
                             <!-- Mobile Menu -->
@@ -155,29 +161,28 @@
 						<!-- form id / method  : login_form / post -->
 						<form class="row login_form" id="login_form" method="post">					
 							<!-- 전체 로그인 부분 묶기 .login_wrap -->
+						<div style="width: 385px">	
 							<div class="login_wrap">
 								<!-- 아이디 묶기 .id_wrap -->
 								<div class="col-md-12 form-group id_wrap">
 									<!-- 아이디 항목 묶기 .id_input_box -->
 									<div class="id_input_box">
 										<!-- 아이디 .id_input / name="memberId" -->
-										<input type="text" class="form-control id_input" name="memberId" placeholder="Username" onfocus="this.placeholder = '아이디'" onblur="this.placeholder = '아이디'">							
+										<input type="text" class="form-control id_input" name="memberId" placeholder="Username">							
 									</div>
 								</div>
-								
 								<!-- 비밀번호 묶기 .pw_wrap -->
 								<div class="col-md-12 form-group pw_wrap">
 									<!-- 비밀번호 항목 묶기 .pw_input_box -->
 									<div class="pw_input_box">
 										<!--  비밀번호 .pw_input / name="memberPw" -->
-										<input type="password" class="form-control pw_input" name="memberPw" placeholder="비밀번호" onfocus="this.placeholder = '비밀번호'" onblur="this.placeholder = '비밀번호'">								
+										<input type="password" class="form-control pw_input" name="memberPw" placeholder="비밀번호">								
 									</div>
 									<!-- 로그인 실패 시 경고글 뜨는 css 추가되어있습니다. -->
 										<c:if test="${result == 0 }">
 											<div class="login_warn" style="margin-top:30px; text-align:center; color:red;">사용자 ID 또는 비밀번호를 잘못 입력하셨습니다.</div>
 										</c:if>
 								</div>
-								
 							
 							<div class="col-md-12 form-group">
 								<div class="creat_account">
@@ -188,9 +193,10 @@
 								<!-- 로그인버튼 묶기 .login_button_wrap -->
 								<div class="col-md-12 form-group login_button_wrap">
 									<input type="button" class="button button-login w-100 login_button" value="로그인">
-									<a href="#">Forgot Password?</a>
+									<!--<a href="#">Forgot Password?</a>-->
 								</div>
 							</div>
+						</div>
 						</form>
 					</div>
 				</div>

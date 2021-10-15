@@ -8,11 +8,11 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>shopping</title>
+        <title>Beauté</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="resources/assets/img/skincare.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="resources/assets/img/leaf.png">
 
 		<!-- CSS here -->
             <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/bootstrap.min.css">
@@ -36,8 +36,8 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                	<!-- 상단 로고 부분 -->
-                    <img src="resources/assets/img/logo/logo.png" alt="">
+                	<!-- 로딩시 로고 보임 -->
+                   	<img src="resources/assets/img/logo/5logo.png" alt="로고 이미지">
                 </div>
             </div>
         </div>
@@ -66,8 +66,8 @@
                                    <ul class="list">                                 
                                    		<!-- 로그인 하지 않은 상태 (로그인 / 회원가입 버튼 보여주며 링크 제공) -->
                                    		<c:if test="${member == null }">
-                                      		<li><a href="/member/login">(로그인)</a></li>
-                                      		<li><a href="/member/join">(회원가입)</a></li>
+                                      		<li><a href="/member/login" style="font-size: 20px">Login</a></li>
+                                      		<li><a href="/member/join" style="font-size: 20px">Sign up</a></li>
                 						</c:if>
                 						<!-- 로그인한 상태  (내정보보기 / 로그아웃 버튼 보여주며 링크 제공) -->
                 						<c:if test="${ member != null }">
@@ -78,7 +78,7 @@
                 								<!-- 회원인경우 마이페이지 항목 보여주기 / 우선 보류-->
                 								<li><a href="/member/mypage">마이페이지</a></li>
                                       				<!-- post방식의 로그아웃 처리 기능 -->
-                                      			<li><a id="gnb_logout_button">로그아웃</a></li>
+                                      			<li><a id="gnb_logout_button" href="main" style="color: white">로그아웃</a></li>
                 						</c:if>
                                    </ul>
                                 </div>
@@ -92,7 +92,7 @@
                             <!-- Logo -->
                             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
                                 <div class="logo">
-                                  <a href="/main"><img src="resources/assets/img/logo/logo.png" alt=""></a>
+                                  <a href="/main"><img src="resources/assets/img/logo/5logo.png" alt="로고 이미지" style="margin-top: -16px"></a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-7 col-sm-5">
@@ -153,7 +153,7 @@
                             </div>
                             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8">
                                 <div class="hero__caption">
-                                    <span data-animation="fadeInRight" data-delay=".4s">60% Discount</span>
+                                    <span data-animation="fadeInRight" data-delay=".4s">60% Sale</span>
                                     <h1 data-animation="fadeInRight" data-delay=".6s">유정이도<br>라네즈<br> 크림 스킨</h1>
                                     <p data-animation="fadeInRight" data-delay=".8s">꿀 피부 예약 완료!</p>
                                     <!-- Hero-btn -->
@@ -207,7 +207,7 @@
                             <div class="category-img">
                                 <img src="resources/assets/img/categori/8.png" alt="">
                                 <div class="category-caption">
-                                    <h2>Owmen`s</h2>
+                                    <h2>dry skin</h2>
                                     <span class="best"><a href="#">Best New Deals</a></span>
                                     <span class="collection">New Collection</span>
                                 </div>
@@ -220,7 +220,7 @@
                                 <img src="resources/assets/img/categori/7.jpg" alt="">
                                 <div class="category-caption">
                                     <span class="collection">Discount!</span>
-                                    <h2>Winter Cloth</h2>
+                                    <h2>oily skin</h2>
                                    <p>New Collection</p>
                                 </div>
                             </div>
@@ -230,8 +230,8 @@
                         <div class="single-category mb-30">
                             <div class="category-img">
                                 <img src="resources/assets/img/categori/2.jpg" alt="">
-                                <div class="category-caption">
-                                    <h2>Man`s Cloth</h2>
+                                <div class="category-caption" style="margin-top: 55px">
+                                    <h2>combination skin</h2>
                                     <span class="best"><a href="#">Best New Deals</a></span>
                                     <span class="collection">New Collection</span>
                                 </div>
@@ -259,8 +259,9 @@
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">All</a>
                                     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">New</a>
-                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Featured</a>
+                                   <!--   <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Featured</a>
                                     <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-contact" aria-selected="false">Offer</a>
+                                    -->
                                 </div>
                             </nav>
                             <!--End Nav Button  -->
@@ -269,7 +270,7 @@
                 </div>
                 <!-- Nav Card -->
                 <div class="tab-content" id="nav-tabContent">
-                    <!-- ALL ë¶ë¶ -->
+                    <!-- ALL 부분 -->
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-6">
@@ -564,7 +565,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--  ì¬ì©ìí¨ ì ì¸í  ìì  Card three -->
+                    <!--  사용안할 예정임  Card three 
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-6">
@@ -716,7 +717,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- ì¬ì©ìí¨ ì ì¸í  ìì  card foure -->
+                    -->
+                    <!-- 사용안할예정임 card foure
                     <div class="tab-pane fade" id="nav-last" role="tabpanel" aria-labelledby="nav-last-tab">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-6">
@@ -869,6 +871,7 @@
                         </div>
                     </div>
                 </div>
+                 -->
                 <!-- End Nav Card -->
             </div>
         </section>
