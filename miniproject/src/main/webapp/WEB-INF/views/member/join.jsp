@@ -59,10 +59,10 @@
                                 </div>
                                 <div class="header-info-right">
                                    <ul>                                          
-                                       <li><a href="login.html" style="font-size: 20px">My Account </a></li>
+                                       <li><a href="login.html" style="font-size: 20px">My Account</a></li>
                                    </ul>
                                    <ul>                                          
-                                       <li><a href="login.html" style="font-size: 20px">Sing in </a></li>
+                                       <li><a href="login.html" style="font-size: 20px">Sing in</a></li>
                                    </ul>
                                 </div>
                             </div>

@@ -73,12 +73,12 @@
                 						<c:if test="${ member != null }">
                 							<!-- 관리자 계정 확인  / 관리자 페이지 보여주기-->
                 							<c:if test="${member.adminCk == 1 }">
-                								<li><a href="/admin/main">관리자 페이지 </a></li>
+                								<li><a href="/admin/main" style="font-size: 20px">Admin page</a></li>
                 							</c:if>
                 								<!-- 회원인경우 마이페이지 항목 보여주기 / 우선 보류-->
-                								<li><a href="/member/mypage">마이페이지</a></li>
+                								<li><a href="/member/mypage" style="font-size: 20px">My page</a></li>
                                       				<!-- post방식의 로그아웃 처리 기능 -->
-                                      			<li><a id="gnb_logout_button" href="main" style="color: white">로그아웃</a></li>
+                                      			<li><<a href="/member/logout.do" style="color: white; font-size: 20px">Logout</a></li>
                 						</c:if>
                                    </ul>
                                 </div>

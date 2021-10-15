@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>마이페이지</title>
+<title>마이페이지 </title>
 </head>
 <body>
 <form id="mypage" action="/member/mypage" method="post">
