@@ -81,7 +81,7 @@
 						<label>상품 가격</label>
 					</div>
 					<div class="form_section_content">
-						<input name="itemPrice" value="0"> <span
+						<input name="itemPrice"> <span
 							class="ck_warn itemPrice_warn">상품가격을 입력해주세요</span>
 					</div>
 				</div>
@@ -99,11 +99,12 @@
 						<label>상품 이미지</label>
 					</div>
 					<!-- 사진 여러장 추가할 때는 type 뒤에 multifile 추가해주기 -->
+					<!-- 
 					<div class="form_section_content">
 						<input type="file" id="fileItem" name='uploadFile'
 							style="height: 30px;">
 						<div id="uploadResult"></div>
-					</div>
+					</div>  -->
 				</div>
 			</form>
 		</div>
@@ -139,9 +140,9 @@
 
 		/* 체크 대상 변수 */
 		let itemCode = $("input[name='itemCode']").val();
-		let itemCode = $("input[name='itemName']").val();
-		let itemCode = $("input[name='itemPrice']").val();
-		let itemCode = $(".iif").html();
+		let itemName = $("input[name='itemName']").val();
+		let itemPrice = $("input[name='itemPrice']").val();
+		let itemInfo = $(".iif p").html();
 
 		/* 공란 체크 */
 		if (itemCode) {
@@ -183,12 +184,11 @@
 			return false;
 		}
 
-		enrollForm.submit();
+		//enrollForm.submit();
 
 	});
 	
 	/* 위지윅 적용 */
-
 	/* 상품소개 */
 	ClassicEditor
 		.create(document.querySelector('#itemInfo_textarea'))

@@ -161,6 +161,15 @@ ul{
 #enrollBtn:hover {
     background-color: #c9cbd0;
 }
+
+/* 입력란 공란 경고 태그 */
+.ck_warn{						
+	display: none;
+    padding-top: 10px;
+    text-align: center;
+    color: #e05757;
+    font-weight: 300;    
+}
  
 /* footer navai 영역 */
 .footer_nav{
