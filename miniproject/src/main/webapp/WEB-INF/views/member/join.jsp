@@ -142,20 +142,10 @@
 	<section class="login_box_area section-margin">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
-					<div class="login_box_img">
-						<div class="hover">
-						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-							<h4>Already have an account?</h4>
-							
-							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-							<a class="button button-account" href="login.html">Login Now</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 wrapper">
-					<div class="login_form_inner register_form_inner">
-						<form class="row join_form" method="post" id="join_form"  style="margin-right: 10px">
+				
+				<div class="col-lg-12 wrapper">
+					<div class="login_form_inner register_form_inner ">
+						<form class="row join_form " method="post" id="join_form"  style="margin-right: 10px">
 						<div class="wrap">
 						<h3>Create an account</h3>
 						</div>

@@ -19,7 +19,6 @@
 
    <%@include file="../includes/admin/header.jsp"%>
    
-   <div class="admin_content_wrap col-xl-12">
    <div class="slider-area">
         <!-- Mobile Menu -->
         <div class="single-slider slider-height2 d-flex align-items-center"
