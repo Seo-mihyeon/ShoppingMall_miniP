@@ -93,15 +93,15 @@ public class AdminController {
 
 	/* 상품 조회 페이지 및 상품 수정 페이지 */
 	@GetMapping({ "/goodsDetail", "/goodsModify" })
-	public void goodsGetInfoGET(int itemid, Criteria cri, Model model) {
+	public void goodsGetInfoGET(int itemId, Criteria cri, Model model) {
 
-		logger.info("goodsGetInfo()........." + itemid);
+		logger.info("goodsGetInfo()........." + itemId);
 
 		/* 목록 페이지 조건 정보 */
 		model.addAttribute("cri", cri);
 
 		/* 조회 페이지 정보 */
-		model.addAttribute("goodsInfo", adminService.goodsGetDetail(itemid));
+		model.addAttribute("goodsInfo", adminService.goodsGetDetail(itemId));
 
 	}
 
@@ -110,11 +110,26 @@ public class AdminController {
 	public String goodsModifyPOST(ItemVO vo, RedirectAttributes rttr) {
 
 		logger.info("goodsModifyPOST..............." + vo);
+		
 		int result = adminService.goodsModify(vo);
 
 		rttr.addFlashAttribute("modify_result", result);
 
 		return "redirect:/admin/goodsManage";
+	}
+	
+	/* 상품 정보 삭제 */
+	@PostMapping("/goodsDelete")
+	public String goodsDeletePOST(int itemId, RedirectAttributes rttr) {
+
+		logger.info("goodsDeletePOST..........");
+
+		int result = adminService.goodsDelete(itemId);
+
+		rttr.addFlashAttribute("delete_result", result);
+
+		return "redirect:/admin/goodsManage";
+
 	}
 
 	/*
@@ -245,19 +260,6 @@ public class AdminController {
 		return result;
 	}
 
-	/* 상품 정보 삭제 */
-	@PostMapping("/goodsDelete")
-	public String goodsDeletePOST(int itemId, RedirectAttributes rttr) {
-
-		logger.info("goodsDeletePOST..........");
-
-		int result = adminService.goodsDelete(itemId);
-
-		rttr.addFlashAttribute("delete_result", result);
-
-		return "redirect:/admin/goodsManage";
-
-	}
 
 	/* 이미지 파일 삭제 */
 	@PostMapping("/deleteFile")
