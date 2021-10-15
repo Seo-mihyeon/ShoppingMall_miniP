@@ -7,14 +7,16 @@
 	<![CDATA[
       insert into SHOP_ITEM(itemId, itemCode, itemName, itemPrice, itemInfo)
       values(item_num.nextval, #{itemCode}, #{itemName},#{itemPrice},#{itemInfo})
-]]>
+	]]>
 	</insert>
 
 	<!-- 상품 리스트 -->
 	<select id="goodsGetList" resultType="com.mall.model.ItemVO">
 
           <![CDATA[
-        select itemcode, itemname, itemprice, iteminfo from shop_item where
+        select * from(
+   	select rownum as rn, itemid,itemcode, itemname, itemprice, iteminfo, regDate from shop_item
+	where
         ]]>
 
 		<if test="keyword != null">
@@ -25,8 +27,10 @@
 
         <![CDATA[
             rownum <= #{pageNum}*#{amount} 
-
-        and rownum > (#{pageNum} - 1) * #{amount}
+  ]]>
+		)
+  <![CDATA[
+        where rn > (#{pageNum} - 1) * #{amount}
           ]]>
 	</select>
 
@@ -53,14 +57,14 @@
 	<!-- 상품 정보 수정 -->
 	<update id="goodsModify">
 	<![CDATA[
-		update shop_item set itemCode=#{itemCode}, itemName=#{itemName}, itemPrice=#{itemPrice},itemInfo=#{itemInfo},updateDate=sysdate where itemId=${itemId}
+		update shop_item set itemCode=#{itemCode}, itemName=#{itemName}, itemPrice=#{itemPrice}, itemInfo=#{itemInfo},updateDate=sysdate where itemId=${itemId}
 	]]>
 	</update>
 
 	<!-- 상품 정보 삭제 -->
 	<delete id="goodsDelete">
 	<![CDATA[
-	DELETE from shop_item where ITEMID = #{ITEMID}
+	DELETE from shop_item where ITEMID = #{itemId}
 	]]>
 	</delete>
 
