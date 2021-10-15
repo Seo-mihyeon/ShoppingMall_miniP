@@ -4,8 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Admin page</title>
 <link rel="stylesheet" href="../resources/css/admin/main.css">
+<link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/assets/img/leaf.png">
 
 <script
   src="https://code.jquery.com/jquery-3.4.1.js"
@@ -18,7 +19,6 @@
 <%@include file="../includes/admin/header.jsp" %>
  
       
-<div class="wrapper">
 	<div class="wrap">
 		<!-- gnv_area -->
 		<!-- 
@@ -30,11 +30,27 @@
 			</ul>
 		</div>
 		 -->
+   <!-- Mobile Menu -->
+	<div class="slider-area">
+        <div class="single-slider slider-height2 d-flex align-items-center"
+        	data-background="/join/assets/img/hero/category.jpg" style="background-image: url("join/assets/img/hero/category.jpg");">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap text-center">
+                        <h2>Admin Page</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 		 
 		<!-- top_subject_area -->
+		<!--  
 		<div class="admin_top_wrap" style="margin-top: 15px;">
 			<span>Admin Page</span>
-
+	-->
 		</div>
 		<!-- contents-area -->
 		<div class="admin_wrap">
