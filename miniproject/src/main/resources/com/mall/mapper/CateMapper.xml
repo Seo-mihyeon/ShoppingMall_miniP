@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mall.mapper.ItemMapper">
+
+	<!-- criteria(검색조건) -->
+	<sql id="criteria">
+		<if test="keyword != null">
+			itemName like '%' || #{keyword} || '%' and
+		</if>
+	</sql>
+
+	<!-- itemCode가 1번인 항목들 조회 junit 테스트 진행하기 -->
+	<select id="getGoodsList" resultType="com.mall.model.ItemVO">
+		<![CDATA[
+			select * from(
+			select rownum as rn, itemName, itemPrice, itemInfo from shop_item where
+        ]]>
+        	<include refid="criteria"></include>
+        <![CDATA[
+            rownum <= #{pageNum}*#{amount} 
+  		]]>
+		)
+  		<![CDATA[
+        where rn > (#{pageNum} - 1) * #{amount}
+        ]]>
+	</select>
+
+	<!-- 상품 총 개수 -->
+	<select id="goodsGetTotal" resultType="int">
+		select count(*) from shop_item
+		where
+		<include refid="criteria"></include>
+		itemId > 0
+	</select>
+
+</mapper>
