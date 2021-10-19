@@ -4,17 +4,24 @@
 
 	<!-- 상품 등록 -->
 	<insert id="goodsEnroll">
+	<selectKey resultType="int" keyProperty="itemId" order="AFTER">
+  		
+  			SELECT MAX(itemId) FROM SHOP_ITEM
+  		
+  		</selectKey>
 	<![CDATA[
       insert into SHOP_ITEM(itemId, itemCode, itemName, itemPrice, itemInfo)
       values(item_num.nextval, #{itemCode}, #{itemName},#{itemPrice},#{itemInfo})
-]]>
+	]]>
 	</insert>
 
 	<!-- 상품 리스트 -->
 	<select id="goodsGetList" resultType="com.mall.model.ItemVO">
 
           <![CDATA[
-        select itemcode, itemname, itemprice, iteminfo from shop_item where
+        select * from(
+   	select rownum as rn, itemid,itemcode, itemname, itemprice, iteminfo, regDate from shop_item
+	where
         ]]>
 
 		<if test="keyword != null">
@@ -25,8 +32,10 @@
 
         <![CDATA[
             rownum <= #{pageNum}*#{amount} 
-
-        and rownum > (#{pageNum} - 1) * #{amount}
+  ]]>
+		)
+  <![CDATA[
+        where rn > (#{pageNum} - 1) * #{amount}
           ]]>
 	</select>
 
@@ -63,5 +72,33 @@
 	DELETE from shop_item where ITEMID = #{ITEMID}
 	]]>
 	</delete>
+	
+	<!-- 이미지 등록 -->
+	<insert id="imageEnroll">
+	<![CDATA[
+		insert into vam_image(itemId, fileName, uploadPath, uuid) values (#{itemId}, #{fileName}, #{uploadPath}, #{uuid})
+	]]>
+	</insert>
+	
+	<!-- 지정 상품 이미지 정보 얻기 -->
+	<select id="getAttachInfo" resultType="com.mall.model.AttachImageVO">
+	
+		select * from vam_image where itemId = #{itemId}
+	
+	</select>
+	
+	<!-- 지정 상품 이미지 전체 삭제 --> 
+	<delete id="deleteImageAll">
+	
+		delete FROM vam_image where itemId = #{itemId}
+	
+	</delete>
+	
+	<!-- 어제자 날자 이미지 리스트 -->
+	<select id="checkFileList" resultType="com.mall.model.AttachImageVO">
+	
+		select * from vam_image where uploadpath = to_char(sysdate -1, 'yyyy\mm\dd')	
+	
+	</select>
 
 </mapper>
