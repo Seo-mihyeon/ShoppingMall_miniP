@@ -133,31 +133,57 @@ public class MemberController {
 	@RequestMapping(value = "logout.do", method = RequestMethod.GET)
 	public String logoutMainGET(HttpServletRequest request) throws Exception {
 		logger.info("logoutMainGET메서드 진입");
-		
+
 		HttpSession session = request.getSession(); // 로그인하고 있는 세션 정보 가져와서 session에 저장
-		
+
 		session.invalidate(); // 가져온 세션 전체를 무효화함
-		
+
 		return "redirect:/main";
 
 	}
-	
-	// 비동기 방식 로그아웃 메서드 
+
+	// 비동기 방식 로그아웃 메서드
 	@RequestMapping(value = "logout.do", method = RequestMethod.POST)
 	@ResponseBody
-	public void logoutPOST(HttpServletRequest request) throws Exception{
+	public void logoutPOST(HttpServletRequest request) throws Exception {
 		logger.info("비동기 로그아웃 메서드 진입");
-		
+
 		HttpSession session = request.getSession();
-		
+
 		session.invalidate();
 	}
-	
+
 	// 내 정보 보기
 	@RequestMapping(value = "/mypage")
-	public String mypage() throws Exception{
+	public String mypage() throws Exception {
 		return "/member/mypage";
-		
+
+	}
+	
+	// 회원 탈퇴 get
+	@RequestMapping(value = "/memberDelete", method = RequestMethod.GET)
+	public String memberDeleteGET() throws Exception{
+		return "member/memberDeleteView";
 	}
 
+	// 회원 탈퇴 post
+	@RequestMapping(value = "/memberDelete", method = RequestMethod.POST)
+	public String memberDeletePOST(MemberVO vo, HttpSession session, RedirectAttributes rttr) throws Exception {
+		
+		memberService.deleteMember(vo);
+		session.invalidate();
+		
+		return "redirect:/main";
+		
+	}
+	
+	// 패스워드 체크
+	@ResponseBody
+	@RequestMapping(value = "/passChk", method = RequestMethod.POST)
+	public boolean passChk(MemberVO vo) throws Exception{
+		
+		MemberVO login = memberService.memberLogin(vo);
+		boolean pwdChk = pwEncoder.matches(vo.getMemberPw(), login.getMemberPw());
+		return pwdChk;
+	}
 }

@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URLDecoder;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -110,19 +112,44 @@ public class AdminController {
 	public String goodsModifyPOST(ItemVO vo, RedirectAttributes rttr) {
 
 		logger.info("goodsModifyPOST..............." + vo);
-		
+
 		int result = adminService.goodsModify(vo);
 
 		rttr.addFlashAttribute("modify_result", result);
 
 		return "redirect:/admin/goodsManage";
 	}
-	
+
 	/* 상품 정보 삭제 */
+	/* 상품 테이블과 이미지 테이블이 itemId 칼럼을 공유하기 때문에 기존 코드로 삭제를 실행했을 때
+	 * 무결성 제약조건으로 삭제가 되지 않습니다. 따라서, 이미지 파일 정보를 불러와 파일 이미지까지 삭제해주는 기능입니다. */
 	@PostMapping("/goodsDelete")
 	public String goodsDeletePOST(int itemId, RedirectAttributes rttr) {
 
 		logger.info("goodsDeletePOST..........");
+
+		List<AttachImageVO> fileList = adminService.getAttachInfo(itemId);
+
+		if (fileList != null) {
+			
+			List<Path> pathList = new ArrayList();
+
+			fileList.forEach(vo -> {
+
+				// 원본 이미지
+				Path path = Paths.get("C:\\upload", vo.getUploadPath(), vo.getUuid() + "_" + vo.getFileName());
+				pathList.add(path);
+
+				// 섬네일 이미지
+				path = Paths.get("C:\\upload", vo.getUploadPath(), "s_" + vo.getUuid() + "_" + vo.getFileName());
+				pathList.add(path);
+
+			});
+
+			pathList.forEach(path -> {
+				path.toFile().delete();
+			});
+		}
 
 		int result = adminService.goodsDelete(itemId);
 
@@ -259,7 +286,6 @@ public class AdminController {
 
 		return result;
 	}
-
 
 	/* 이미지 파일 삭제 */
 	@PostMapping("/deleteFile")
