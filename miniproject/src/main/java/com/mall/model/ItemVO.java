@@ -1,6 +1,7 @@
 package com.mall.model;
 
 import java.util.Date;
+import java.util.List;
 
 public class ItemVO {
 
@@ -18,6 +19,8 @@ public class ItemVO {
 	private Date regDate;
 	/* 수정 날짜 */
 	private Date updateDate;
+	/* 이미지 정보 */
+	private List<AttachImageVO> imageList;
 
 	public int getItemId() {
 		return itemId;
@@ -75,10 +78,18 @@ public class ItemVO {
 		this.updateDate = updateDate;
 	}
 
-	@Override
-	public String toString() {
-		return "ShopVO [itemId=" + itemId + ", itemCode=" + itemCode + ", itemName=" + itemName + ", itemPrice="
-				+ itemPrice + ", itemInfo=" + itemInfo + ", regDate=" + regDate + ", updateDate=" + updateDate + "]";
+	public List<AttachImageVO> getImageList() {
+		return imageList;
 	}
 
+	public void setImageList(List<AttachImageVO> imageList) {
+		this.imageList = imageList;
+	}
+
+	@Override
+	public String toString() {
+		return "ItemVO [itemId=" + itemId + ", itemCode=" + itemCode + ", itemName=" + itemName + ", itemPrice="
+				+ itemPrice + ", itemInfo=" + itemInfo + ", regDate=" + regDate + ", updateDate=" + updateDate
+				+ ", imageList=" + imageList + "]";
+	}
 }

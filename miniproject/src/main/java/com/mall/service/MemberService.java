@@ -15,4 +15,11 @@ public interface MemberService {
 	
 	// 회원정보 조회
 	public MemberVO readMember(String memberId) throws Exception;
+	
+	// 회원 탈퇴
+	public void deleteMember(MemberVO member) throws Exception;
+	
+	// 패스워드 체크
+	public int passChk(MemberVO member) throws Exception;
+	
 }

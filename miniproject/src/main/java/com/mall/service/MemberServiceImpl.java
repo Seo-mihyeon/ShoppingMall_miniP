@@ -44,4 +44,18 @@ public class MemberServiceImpl implements MemberService {
 		return member;
 	}
 
+	// 회원 탈퇴
+	@Override
+	public void deleteMember(MemberVO member) throws Exception {
+		memberMapper.deleteMember(member);
+	}
+
+	// 패스워드 체크
+	@Override
+	public int passChk(MemberVO member) throws Exception {
+		int result = memberMapper.passChk(member);
+		return result;
+	}
+
+
 }
