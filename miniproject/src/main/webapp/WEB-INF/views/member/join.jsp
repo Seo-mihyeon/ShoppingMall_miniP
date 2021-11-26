@@ -59,10 +59,7 @@
                                 </div>
                                 <div class="header-info-right">
                                    <ul>                                          
-                                       <li><a href="login.html" style="font-size: 20px">My Account</a></li>
-                                   </ul>
-                                   <ul>                                          
-                                       <li><a href="login.html" style="font-size: 20px">Sing in</a></li>
+                                       <li><a href="/member/login" style="font-size: 20px">Sing in</a></li>
                                    </ul>
                                 </div>
                             </div>
@@ -84,13 +81,7 @@
                                     <nav>                                                
                                         <ul id="navigation">                                                                                                                                     
                                             <li><a href="/main">Home</a></li>
-                                            <li><a href="Catagori.html">Catagori</a></li>
-                                            <li class="hot"><a href="#">Latest</a>
-                                                <ul class="submenu">
-                                                    <li><a href="product_list.html"> Product list</a></li>
-                                                    <li><a href="single-product.html"> Product Details</a></li>
-                                                </ul>
-                                            </li>
+                                            <li class="hot" ><a href="/cate1">Catagori</a></li>
                                         </ul>
                                     </nav>
                                 </div>

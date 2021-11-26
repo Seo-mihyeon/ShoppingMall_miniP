@@ -19,32 +19,25 @@
 <%@include file="../includes/admin/header.jsp" %>
  
       
-	<div class="wrap">
-		<!-- gnv_area -->
-		<!-- 
-		<div class="top_gnb_area">
-			<ul class="list">
-				<li><a href="/main">메인 페이지</a></li>
-				<li><a href="/member/logout.do">로그아웃</a></li>
-				<li>고객센터</li>
-			</ul>
-		</div>
-		 -->
+	<div class="wrap col-xl-12">
+		
    <!-- Mobile Menu -->
-	<div class="slider-area">
+	<div class="slider-area ">
+        <!-- Mobile Menu -->
         <div class="single-slider slider-height2 d-flex align-items-center"
         	data-background="/join/assets/img/hero/category.jpg" style="background-image: url("join/assets/img/hero/category.jpg");">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
-                        <h2>Admin Page</h2>
+                        <a href="/admin/main"><h2>Admin Page</h2></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> 
+       
+
 		 
 		<!-- top_subject_area -->
 		<!--  

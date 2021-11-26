@@ -58,7 +58,7 @@
                                <h4>Quick Links</h4>
                                <ul>
                                    <li><a href="/main"> Home</a></li>
-                                   <li><a href="#"> Categori</a></li>
+                                   <li><a href="/cate1"> Catagori</a></li>
                                    <li><a href="#"> Latest</a></li>
                                    <li><a href="/member/join"> Sign Up</a></li>
                                    <li><a href="/member/login"> Sign In</a></li>

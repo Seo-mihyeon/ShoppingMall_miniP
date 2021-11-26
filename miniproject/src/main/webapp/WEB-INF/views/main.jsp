@@ -97,32 +97,29 @@
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-7 col-sm-5">
                                 <!-- Main-menu -->
-                                <div class="main-menu f-right d-none d-lg-block">
+                                <div class="main-menu f-right d-none d-lg-block" style="margin-left : 50px;">
                                     <nav>                                                
                                         <ul id="navigation">                                                                                                                                     
                                             <li><a href="/main">Home</a></li>
-                                            <li><a href="Catagori.html">Catagori</a></li>
-                                            <li class="hot"><a href="#">Latest</a>
-                                                <ul class="submenu">
-                                                    <li><a href="product_list.html"> Product list</a></li>
-                                                    <li><a href="single-product.html"> Product Details</a></li>
-                                                </ul>
-                                            </li>
+                                            <li class="hot"><a href="/cate1">Catagori</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div> 
-                            <div class="col-xl-5 col-lg-5 col-md-3 col-sm-3 fix-card">
+ 							<div class="col-xl-5 col-lg-5 col-md-3 col-sm-3 fix-card " >
                                 <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
                                     <li class="d-none d-xl-block">
+                                    <form id="searchForm" action="/search" method="get" >
                                         <div class="form-box f-right ">
-                                            <input type="text" name="Search" placeholder="Search products">
+                                            <input type="text" name="keyword" placeholder="Search products">
                                             <div class="search-icon">
+                                            	<a href="/search">
                                                 <i class="fas fa-search special-tag"></i>
+                                                </a>
                                             </div>
                                         </div>
+                                        </form>
                                      </li>
-                                   <li class="d-none d-lg-block"> <a href="member/join" class="btn header-btn">Sign up</a></li>
                                 </ul>
                             </div>
                             <!-- Mobile Menu -->
@@ -158,7 +155,7 @@
                                     <p data-animation="fadeInRight" data-delay=".8s">꿀 피부 예약 완료!</p>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn" data-animation="fadeInRight" data-delay="1s">
-                                        <a href="industries.html" class="btn hero-btn">Shop Now</a>
+                                        <a href="/cate1" class="btn hero-btn">Shop Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -259,9 +256,6 @@
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">All</a>
                                     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">New</a>
-                                   <!--   <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Featured</a>
-                                    <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-contact" aria-selected="false">Offer</a>
-                                    -->
                                 </div>
                             </nav>
                             <!--End Nav Button  -->
@@ -286,13 +280,13 @@
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
-                                            <i class="far fa-star low-star"></i>
+                                            <i class="far fa-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
                                         <h4><a href="#">워터뱅크 아이 젤</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$40.00</li>
+                                                <li>￦30,000</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -308,13 +302,13 @@
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
-                                            <i class="far fa-star low-star"></i>
+                                            <i class="far fa-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
                                         <h4><a href="#">피토알렉신 진정 보습 크림</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$40.00</li>
+                                                <li>￦28,000</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -339,7 +333,7 @@
                                         <h4><a href="#">크림 스킨</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$40.00</li>
+                                                <li>￦18,000</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -355,13 +349,13 @@
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
-                                            <i class="far fa-star low-star"></i>
-                                            <i class="far fa-star low-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
                                         </div>
                                         <h4><a href="#">크림 스킨 옴므 올인원</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$40.00</li>
+                                                <li>￦42,000</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -383,7 +377,7 @@
                                         <h4><a href="#">워터뱅크 하이드로 크림 EX</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$40.00</li>
+                                                <li>￦38,000</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -408,7 +402,7 @@
                                         <h4><a href="#">퍼펙트 리뉴 유스 리제너레이팅 아이 크림</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$40.00</li>
+                                                <li>￦23,000</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -438,7 +432,7 @@
                                         <h4><a href="#">퍼펙트 리뉴 유스 리제너레이팅 아이 크림</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$40.00</li>
+                                                <li>￦23,000</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -463,7 +457,7 @@
                                         <h4><a href="#">크림 스킨</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$40.00</li>
+                                                <li>￦18,000</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -482,13 +476,13 @@
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
-                                            <i class="far fa-star low-star"></i>
+                                            <i class="far fa-star"></i>
                                             <i class="far fa-star low-star"></i>
                                         </div>
                                         <h4><a href="#">워터뱅크 아이 젤</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$40.00</li>
+                                                <li>￦30,000</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -510,7 +504,7 @@
                                         <h4><a href="#">어성초 77% 토너</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$40.00</li>
+                                                <li>￦21,000</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -532,7 +526,7 @@
                                         <h4><a href="#">캐리오피 포츌라카 토너</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$40.00</li>
+                                                <li>￦19,000</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -557,7 +551,7 @@
                                         <h4><a href="#">브링그린 티트리 시카 수딩 토너</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$40.00</li>
+                                                <li>￦22,000</li>
                                             </ul>
                                         </div>
                                     </div>

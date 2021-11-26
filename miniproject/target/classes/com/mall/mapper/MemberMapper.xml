@@ -6,7 +6,7 @@
 	<insert id="memberJoin">
 		<![CDATA[
 			INSERT INTO SHOP_MEMBER VALUES(#{memberId}, #{memberPw}, #{memberName}, #{memberPhone},
-								#{memberBirth}, #{memberMail}, #{memberAddr1}, #{memberAddr2}, #{memberAddr3}, 0)
+								#{memberMail}, #{memberBirth}, #{memberAddr1}, #{memberAddr2}, #{memberAddr3}, 0)
 		]]>
 	</insert>
 

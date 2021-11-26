@@ -58,10 +58,6 @@
                                 </div>
                                 <div class="header-info-right">
                                    <ul>                                          
-                                       <li><a href="login.html" style="font-size: 20px">My Account</a></li>
-                                       
-                                   </ul>
-                                   <ul>                                          
                                        <li><a href="join.html" style="font-size: 20px">Sign up</a></li>
                                        
                                    </ul>
@@ -85,13 +81,7 @@
                                     <nav>                                                
                                         <ul id="navigation">                                                                                                                                     
                                             <li><a href="/main">Home</a></li>
-                                            <li><a href="Catagori.html">Catagori</a></li>
-                                            <li class="hot"><a href="#">Latest</a>
-                                                <ul class="submenu">
-                                                    <li><a href="product_list.html"> Product list</a></li>
-                                                    <li><a href="single-product.html"> Product Details</a></li>
-                                                </ul>
-                                            </li>
+                                            <li class="hot"><a href="/cate1">Catagori</a></li>
                                             
                                         </ul>
                                     </nav>
@@ -107,7 +97,9 @@
                                             </div>
                                         </div>
                                      </li>
-                                   
+                                   <!--  
+                                   <li class="d-none d-lg-block"> <a href="login.jsp" class="btn header-btn">Sign in</a></li>
+                                   -->
                                 </ul>
                             </div>
                             <!-- Mobile Menu -->
@@ -141,7 +133,7 @@
 
 
   <!--================Login Box Area =================-->
-   <section class="login_box_area section-margin" >
+   <section class="login_box_area section-margin">
       <div class="container">
          <div class="row">
             
@@ -179,7 +171,7 @@
                      </div>
                         <!-- 로그인버튼 묶기 .login_button_wrap -->
                         <div class="col-md-12 form-group login_button_wrap">
-                           <input type="button" class="button button-login w-100 login_button" value="로그인">
+                           <input type="button" class="button button-login w-100 login_button" value="Login">
                            <!--<a href="#">Forgot Password?</a>-->
                         </div>
                      </div>

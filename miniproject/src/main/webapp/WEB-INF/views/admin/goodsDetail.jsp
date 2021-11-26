@@ -94,6 +94,9 @@
             <div class="form_section_title">
                <label>상품 이미지</label>
             </div>
+            <div class="form_section_content">
+				<div id="uploadReslut"></div>
+			</div>
          </div>
 
          <div class="btn_section" >
@@ -112,34 +115,63 @@
    </div>
    <%@include file="../includes/admin/footer.jsp"%>
 
-   <script>
-             /* 책 소개 */
-         ClassicEditor
-            .create(document.querySelector('#itemInfo_textarea'))
-            .then(editor => {
-               console.log(editor);
-               editor.isReadOnly = true;
-            })
-            .catch(error=>{
-               console.error(error);
-            });
-             
-         /* 목록 이동 버튼 */
-         $("#cancelBtn").on("click", function(e){
-            e.preventDefault();
-            $("#moveForm").submit();   
-         });   
-         
-         /* 수정 페이지 이동 */
-         $("#modifyBtn").on("click", function(e){
-            e.preventDefault();
-            let addInput = '<input type="hidden" name="itemId" value="${goodsInfo.itemId}">';
-            $("#moveForm").append(addInput);
-            $("#moveForm").attr("action", "/admin/goodsModify");
-            $("#moveForm").submit();
-         });   
-   </script>
+	<script>
+	/* 상품 소개 */
+	ClassicEditor
+		.create(document.querySelector('#itemInfo_textarea'))
+		.then(editor => {
+			console.log(editor);
+			editor.isReadOnly = true;
+		})
+		.catch(error=>{
+			console.error(error);
+		});
+			
+	/* 이미지 정보 호출 */
+	let itemId = '<c:out value="${goodsInfo.itemId}"/>';
+	let uploadReslut = $("#uploadReslut");
 
+	$.getJSON("/getAttachList", {itemId : itemId}, function(arr){	
+		/* 이미지 없을 경우 */
+		if(arr.length === 0){	
+			
+			let str = "";
+			str += "<div id='result_card'>";
+			str += "<img src='/resources/img/goodsNoImage.png'>";
+			str += "</div>";
+			
+			uploadReslut.html(str);	
+			return;
+		}
+		/* 이미지 있을 경우 */
+		let str = "";
+		let obj = arr[0];
+		
+		let fileCallPath = encodeURIComponent(obj.uploadPath + "/s_" + obj.uuid + "_" + obj.fileName);
+		str += "<div id='result_card'";
+		str += "data-path='" + obj.uploadPath + "' data-uuid='" + obj.uuid + "' data-filename='" + obj.fileName + "'";
+		str += ">";
+		str += "<img src='/display?fileName=" + fileCallPath +"'>";
+		str += "</div>";
+		
+		uploadReslut.html(str);	
+	});		
+			
+	/* 목록 이동 버튼 */
+	$("#cancelBtn").on("click", function(e){
+		e.preventDefault();
+		$("#moveForm").submit();	
+	});	
+	
+	/* 수정 페이지 이동 */
+	$("#modifyBtn").on("click", function(e){
+		e.preventDefault();
+		let addInput = '<input type="hidden" name="itemId" value="${goodsInfo.itemId}">';
+		$("#moveForm").append(addInput);
+		$("#moveForm").attr("action", "/admin/goodsModify");
+		$("#moveForm").submit();
+	});	
+	</script>
 
 </body>
 </html>
